@@ -86,22 +86,22 @@ first_name_pm = ""
 PM_START_TEXT = """
 ───『 {} 』───
 *Hey there {}!,*
-* I am an advance group management bot with a lots of Features. My Anime theme is from Takt OP. Destiny *
+* I am an advance group management bot with a lots of Features. My Anime theme is from HellSing. 𝙰𝚕𝚞𝚌𝚊𝚛𝚍 *
 
-➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳
-ღღ    *Uptime:* `{}`    ღღ
-➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳
+══════════════════════
+✟    *Uptime:* `{}`    ✟
+══════════════════════
 
-➥ Users Interacted : `{}`
-➥ Total Chats : `{}`
+➣ Users Interacted : `{}`
+➣ Total Chats : `{}`
 
-♡ Try The Help Button below To Know My Abilities[.](https://telegra.ph/file/9473d3f0e989ee67bb4cd.jpg) ♡
+✟ Try The Help Button below To Know My Abilities[.](https://telegra.ph/file/ddd1f7bfc7c7213eecfe8.jpg) ✟
 """
 
 
 HELP_STRINGS = """
-Hello there, I'm Unmei Bot! Some people do call me Destiny.
-To make me functional, make sure that i have enough rights in your group[.](https://telegra.ph/file/26c430892d2ce0e407443.jpg)
+Hello there, I'm Alucard Robot! Some people do call me Alucard.
+To make me functional, make sure that I have enough rights in your group[.](https://telegra.ph/file/ddd1f7bfc7c7213eecfe8.jpg)
 Helpful commands:
 
 - /start: It will starts me! You've probably used this, as you are here now.
@@ -110,30 +110,30 @@ Helpful commands:
 All commands can be used with the following: / !
 List of all the Modules:
 """.format(
-    dispatcher.bot.first_name, "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.")
+    dispatcher.bot.first_name, "" if not ALLOW_EXCL else "✟ All commands can either be used with / or !.")
 buttons = [
     [
         InlineKeyboardButton(text="『 ➕ Add Me 』",url="https://telegram.dog/Destiny_x_Bot?startgroup=true"),
-        InlineKeyboardButton(text="『 🙇 Help 』", callback_data="help_back")
+        InlineKeyboardButton(text="『 🔗 Help 』", callback_data="help_back")
     ],
     [
-        InlineKeyboardButton(text="『 🌟 Anime Channel 』",url="https://t.me/trending_anime_series"),
-        InlineKeyboardButton(text="『 ❔ Otaku Talks 』", url="https://t.me/tas_support")
+        InlineKeyboardButton(text="『 🌐 Hunter Committee 』",url="https://t.me/Hunter_Committee"),
+        InlineKeyboardButton(text="『 ⚓ Hunter Association 』", url="https://t.me/TheHunterAssociation")
     ],
     [
-        InlineKeyboardButton(text="『 🚑 Support 』",url="https://telegram.dog/unmei_support"),
-        InlineKeyboardButton(text="『 📢 Updates 』",url="https://t.me/unmei_updates")
+        InlineKeyboardButton(text="『 🩸 Support 』",url="https://telegram.dog/Testing_Support"),
+        InlineKeyboardButton(text="『 🚨 Logs 』",url="https://t.me/Events_Testing")
     ]
 ]
 
-GROUP_START_IMG = "https://telegra.ph/file/2d9b9613c4c7f8310c6d1.mp4"
-DESTINY_IMG = "https://telegra.ph/file/a4f96c30605ece22664ea.jpg"
+GROUP_START_IMG = "https://telegra.ph/file/8b06d2fb52b5895384c57.mp4"
+DESTINY_IMG = "https://telegra.ph/file/8b06d2fb52b5895384c57.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting [Shoto](t.me/yameteee_yamete_kudasai)
+ You can support the project by contacting [Freak🎭](t.me/Freaking_tag)
  Supporting isn't always financial!
  Those who cannot provide monetary support are welcome to help us develop the bot at our
-[Support Group](t.me/unmei_support)."""
+[Support Group](t.me/Testing_Support)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -379,7 +379,7 @@ def unmei_about_callback(update, context):
     query = update.callback_query
     if query.data == "unmei_":
         query.message.edit_text(
-            text="๏ I'm *Unmei (Destiny)*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Alucard (Hellsing)*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -428,7 +428,7 @@ def unmei_about_callback(update, context):
     elif query.data == "unmei_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, Unmei (Destiny) is now ready to manage your group."
+            "\nCongragulations, Alucard (Destiny) is now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -455,14 +455,14 @@ def unmei_about_callback(update, context):
         )
     elif query.data == "unmei_support":
         query.message.edit_text(
-            text="**๏ Unmei Support Chats**"
+            text="**๏ Alucard Support Chats**"
             "\nJoin My Support Group/Channel for see or report a problem on Unmei.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/unmei_support"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/unmei_updates"),
+                    InlineKeyboardButton(text="Support", url="t.me/Testing_Support"),
+                    InlineKeyboardButton(text="Logs", url="https://t.me/Events_Testing"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="unmei_"),
@@ -806,7 +806,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hey there Symphonicas,\nI['](https://telegra.ph/file/6931b8ee3a04aef8af314.mp4)m awake again.",
+                "👋 Hey there Symphonicas,\nI['](https://telegra.ph/file/8b06d2fb52b5895384c57.mp4)m awake again.",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
