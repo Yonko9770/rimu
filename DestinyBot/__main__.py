@@ -121,8 +121,8 @@ buttons = [
         InlineKeyboardButton(text="『 ⚓ Hunter Association 』", url="https://t.me/TheHunterAssociation")
     ],
     [
-        InlineKeyboardButton(text="『 🩸 Support 』",url="https://telegram.dog/Testing_Support"),
-        InlineKeyboardButton(text="『 🚨 Logs 』",url="https://t.me/Events_Testing")
+        InlineKeyboardButton(text="『 🩸 Support 』",url="https://telegram.dog/HellSing_Organisation"),
+        InlineKeyboardButton(text="『 🗡️ Logs 』",url="https://t.me/HellSing_Quaters")
     ]
 ]
 
@@ -133,7 +133,7 @@ DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting [Freak🎭](t.me/Freaking_tag)
  Supporting isn't always financial!
  Those who cannot provide monetary support are welcome to help us develop the bot at our
-[Support Group](t.me/Testing_Support)."""
+[Support Group](t.me/HellSing_Organisation)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -197,7 +197,7 @@ def send_help(chat_id, text, keyboard=None):
 def test(update: Update, context: CallbackContext):
     # pprint(eval(str(update)))
     # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
-    update.effective_message.reply_text("Hola tester! I,m Up & running perfectly fine.")
+    update.effective_message.reply_text("Hello tester! I,m Up & running perfectly fine.")
     print(update.effective_message)
 
 
@@ -398,10 +398,10 @@ def unmei_about_callback(update, context):
                  ],
                  [
                     InlineKeyboardButton(text="Support", callback_data="unmei_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="unmei_credit"),
+                    InlineKeyboardButton(text="Owner", callback_data="unmei_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/DarkSoulxUltra/DestinyBot"),
+                    InlineKeyboardButton(text="Source Code", url="https://youtu.be/dQw4w9WgXcQ"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="unmei_back"),
@@ -461,8 +461,8 @@ def unmei_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/Testing_Support"),
-                    InlineKeyboardButton(text="Logs", url="https://t.me/Events_Testing"),
+                    InlineKeyboardButton(text="Support", url="t.me/HellSing_Organisation"),
+                    InlineKeyboardButton(text="Logs", url="https://t.me/HellSing_Quaters"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="unmei_"),
@@ -475,17 +475,17 @@ def unmei_about_callback(update, context):
 
     elif query.data == "unmei_credit":
         query.message.edit_text(
-            text=f"๏ Credis for Unmei\n"
-            "\nHere Developers Making And Give Inspiration For making the repo",
+            text=f"๏ Owner and Committee\n"
+            "\nHere is the Owner of Alucard and the Committee he owns",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
 		 [
-                    InlineKeyboardButton(text="Shoto", url="https://github.com/DarkSoulxUltra"),
+                    InlineKeyboardButton(text="Freak🎭", url="https://t.me/Freaking_tag"),
                  ],
                  [
-                    InlineKeyboardButton(text="sena-ex", url="https://github.com/kennedy-ex"),
-                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
+                    InlineKeyboardButton(text="Hunter Association", url="https://t.me/TheHunterAssociation"),
+                    InlineKeyboardButton(text="Committee", url="https://t.me/Hunter_Committee"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="unmei_"),
@@ -759,7 +759,7 @@ def donate(update: Update, context: CallbackContext):
 
         if OWNER_ID != 866830519:
             update.effective_message.reply_text(
-                "I'm free for everyone ❤️ If you wanna make me smile, just join"
+                "I'm here for the HellSing Organisation 🩸 I will help you also, just join"
                 "[My Channel]({})".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
@@ -806,7 +806,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hey there Symphonicas,\nI['](https://telegra.ph/file/8b06d2fb52b5895384c57.mp4)m awake again.",
+                "Trump Card of HellSing Organisation,\nI['](https://telegra.ph/file/aeb0c972d16b9741735a5.mp4)m awake again.",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
