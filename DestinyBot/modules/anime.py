@@ -481,7 +481,7 @@ def request(update: Update, context: CallbackContext):
     #args = context.args
     #log_message = ""
     IMAGE = "https://telegra.ph/file/182dcf60ae56e644b09ed.jpg"
-    reqChannelLink = ".me/+mI7_0HdJPGhmNzI1"
+    reqChannelLink = "t.me/+5ADY8ll9pcJhZmRl"
     tasLink = "t.me/TheHunterAssociation"
     chat = update.effective_chat
     ANIME_NAME = message.text.split(' ', 1)
