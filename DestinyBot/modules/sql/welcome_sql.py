@@ -64,7 +64,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "I'm looking for Levi, oh wait nvm it's {first}.",  # One Punch man s2
     "Welcome {first}, leaving is not an option!",
     "Run Forest! ..I mean...{first}.",
-    "Huh?\nDid someone with a Disaster level just join?\nOh wait, it's just {first}.",  # One Punch ma
+    "Huh?\nDid someone from the HellSing Organisation just join?\nOh wait, it's just {first}.",  # One Punch ma
     "Hey, {first}, ever heard the Titan Engine?",  # One Punch ma
     "Hey, {first}, empty your pockets.",
     "Hey, {first}!, are you strong?",
