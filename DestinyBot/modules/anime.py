@@ -163,17 +163,17 @@ query ($id: Int,$search: String) {
     }
 """
 
-AWAKE_MSG = f"""**✩✮ ɪ ᴀᴍ ᴜɴᴍᴇɪ, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ. **
+AWAKE_MSG = f"""✟ I am Alucard, A Powerful Group managing Bot.
 
-**Python Version :** `{py_ver()}`
+✟ Python Version : {py_ver()}
 
-**Library Version :** `{tg_ver}`
+✟ Library Version : {tg_ver}
 
-**Telethon Version :** `{teleth_ver}`
+✟ Telethon Version : {teleth_ver}
 
-**Pyrogram Version :** `{pyro_ver}`
+✟ Pyrogram Version : {pyro_ver}
 
-✩✮ 💞 ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ 💞**
+✟ Thanks for giving me Blood 🩸 and adding me here!
 
 """
 
@@ -264,7 +264,7 @@ def anime(update: Update, context: CallbackContext):
                     parse_mode=ParseMode.MARKDOWN,
                     reply_markup=InlineKeyboardMarkup(buttons))
             except:
-                msg += f" [〽️]({image})"
+                msg += f" [🩸]({image})"
                 update.effective_message.reply_text(
                     msg,
                     parse_mode=ParseMode.MARKDOWN,
@@ -362,7 +362,7 @@ def manga(update: Update, context: CallbackContext):
                     parse_mode=ParseMode.MARKDOWN,
                     reply_markup=InlineKeyboardMarkup(buttons))
             except:
-                msg += f" [〽️]({image})"
+                msg += f" [🩸]({image})"
                 update.effective_message.reply_text(
                     msg,
                     parse_mode=ParseMode.MARKDOWN,
@@ -375,15 +375,15 @@ def manga(update: Update, context: CallbackContext):
 
 def awake(update: Update, context: CallbackContext):
     message = update.effective_message
-    IMAGE = "https://telegra.ph/file/a4f96c30605ece22664ea.jpg"
+    IMAGE = "https://telegra.ph/file/630e39b53d676ae91ad4f.jpg"
     msg = ""
     msg += f"{AWAKE_MSG}"
-    support = "t.me/unmei_support"
-    owner = "t.me/yameteee_yamete_kudasai"
+    support = "t.me/HellSing_Organisation"
+    owner = "t.me/Freaking_tag"
     buttons = [
 	[
-            InlineKeyboardButton("『 ⚡ Support ⚡ 』", url=support),
-	    InlineKeyboardButton("『 ♥ Maestro ♥ 』", url=owner)
+            InlineKeyboardButton("『HellSing🩸』", url=support),
+	    InlineKeyboardButton("『Freak🎭』", url=owner)
         ]
     ]
     update.effective_message.reply_photo(
