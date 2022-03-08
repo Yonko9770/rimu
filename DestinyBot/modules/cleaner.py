@@ -222,7 +222,7 @@ __help__ = """
 ✮ /unignoreblue <word>*:* remove prevent auto cleaning of the command
 ✮ /listblue*:* list currently whitelisted commands
 
- *Following are Disasters only commands, admins cannot use these:*
+ *Following are Member only commands, admins cannot use these:*
 
 ✮ /gignoreblue <word>*:* globally ignorea bluetext cleaning of saved word across Destiny.
 ✮ /ungignoreblue <word>*:* remove said command from global cleaning list.
