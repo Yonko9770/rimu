@@ -480,16 +480,16 @@ def request(update: Update, context: CallbackContext):
     message = update.effective_message
     #args = context.args
     #log_message = ""
-    IMAGE = "https://telegra.ph/file/5a6c8550a81576df19be9.jpg"
-    reqChannelLink = "t.me/+0laY9Q97Djo3OTg1"
-    tasLink = "t.me/tas_support"
+    IMAGE = "https://telegra.ph/file/182dcf60ae56e644b09ed.jpg"
+    reqChannelLink = ".me/+mI7_0HdJPGhmNzI1"
+    tasLink = "t.me/TheHunterAssociation"
     chat = update.effective_chat
     ANIME_NAME = message.text.split(' ', 1)
     user = update.effective_user
     bot = context.bot
     buttons = [
-        [InlineKeyboardButton("⏱️ Anime Request Queue ⏱️", url=reqChannelLink)],
-        [InlineKeyboardButton("🚀 Escalate to Uploaders 🚀", url=tasLink)]
+        [InlineKeyboardButton("⏳ Request Centre ⏳", url=reqChannelLink)],
+        [InlineKeyboardButton("✨ Anime Group ✨", url=tasLink)]
     ]
     try:
         chat_id = REQUEST_CHAT_ID
@@ -503,7 +503,7 @@ def request(update: Update, context: CallbackContext):
 
     if len(to_send.split(" ")) >= 2:
         try:
-            msg = "Request Submitted successfully, please have some patience.\n If your request not processed yet, check the below:\n"
+            msg = "Request have been Submitted successfully, please have some patience.\n If your request has not processed yet, complain in Anime Group with the buttons below:\n"
             to_send = f"{to_send}\nRequester: @{user.username}\nRequester ID: {user.id}\n\nFrom Chat: {chat.title}\nChat Username: @{chat.username}\nChat ID: {chat.id}\n"
             update.effective_message.reply_photo(
 	        IMAGE,
