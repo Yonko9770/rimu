@@ -503,7 +503,7 @@ def request(update: Update, context: CallbackContext):
 
     if len(to_send.split(" ")) >= 2:
         try:
-            msg = "Request have been Submitted successfully, please have some patience.\n If your request has not processed yet, complain in Anime Group with the buttons below:\n"
+            msg = "Request have been Submitted successfully, please have some patience.\n If your request not processed yet, then check the buttons below:\n"
             to_send = f"{to_send}\nRequester: @{user.username}\nRequester ID: {user.id}\n\nFrom Chat: {chat.title}\nChat Username: @{chat.username}\nChat ID: {chat.id}\n"
             update.effective_message.reply_photo(
 	        IMAGE,
