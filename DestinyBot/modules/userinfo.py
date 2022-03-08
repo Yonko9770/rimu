@@ -246,10 +246,10 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Retrieving Info from the Symphonica DB...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>Accessing info from HellSing Organisation...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══「<b> Appraisal results:</b> 」\n"
+        f"╒═══「<b> Accessed Results:</b> 」\n"
         f"ID: <code>{user.id}</code>\n"
         f"First Name: {html.escape(user.first_name)}"
     )
@@ -295,26 +295,26 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\n This person is my Maestro❤️ - <b>'Takt'</b>."
+        text += "\n\n This person is my Vampire - <b>'Alucard'</b>."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of the 'Conductors', a Dev level member."
+        text += "\n\nThis user is a 'HellSing Member', a Dev level member."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Disaster level of this person is 'Musicarts', a Dragon."
+        text += "\n\nThis user is a 'Protestine', from the Organisation."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Disaster level of this person is 'D2 Slayer', that's basically a Demon."
+        text += "\n\nThis user is a 'Catholic', from the Organisation."
         disaster_level_present = True 
     elif user.id in TIGERS:
-        text += "\n\nThe Disaster level of this person is 'Defender', a Tiger, Rawrrr!!!."
+        text += "\n\nThis user is a 'Butler', from the Organisation."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Disaster level of this person is 'Melody Creator', Haah!! a Wolf."
+        text += "\n\nThis user is a 'Ghoul', from the Organisation."
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/unmei_updates/4"> 𝒾 </a>]'.format(
+        text += ' [<a href="https://t.me/HellSing_Updates/4"> ✟ </a>]'.format(
             bot.username,
         )
 
@@ -351,9 +351,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/unmei_updates/5"),
+                                "Health", url="https://t.me/HellSing_Updates/5"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/unmei_updates/4")
+                                "Members", url="https://t.me/HellSing_Updates/4")
                         ],
                     ]
                 ),
@@ -439,7 +439,7 @@ def set_about_me(update: Update, context: CallbackContext):
 @sudo_plus
 def stats(update, context):
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
-    status = "*╒═══『 System statistics 』*\n\n"
+    status = "*╒═══『 Organisation statistics 』*\n\n"
     status += "*✧ Python Version:* " + python_version() + "\n"
     status += "*✧ python-Telegram-Bot:* " + str(ptbversion) + "\n"
     status += "*✧ Uptime:* " + get_readable_time((time.time()-StartTime)) + "\n"
@@ -448,8 +448,8 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[➥ Support](https://t.me/{SUPPORT_CHAT}) | [➲ Updates](https://t.me/unmei_updates)\n\n"
-            + "╘══ 『 by [𝚂𝙷𝙾𝚃𝙾](https://t.me/yameteee_yamete_kudasai) 』\n",
+            + f"\n\n[➥ Support](https://t.me/{SUPPORT_CHAT}) | [➲ Updates](https://t.me/HellSing_Updates)\n\n"
+            + "╘══ 『 by [Freak🎭](https://t.me/Freaking_tag) 』\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
@@ -461,9 +461,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n➥ [Support](https://t.me/{SUPPORT_CHAT}) | ➲ [Updates](https://t.me/unmei_updates)\n\n"
+                    + f"\n\n➥ [Support](https://t.me/{SUPPORT_CHAT}) | ➲ [Updates](https://t.me/HellSing_Updates)\n\n"
                 )
-                + "╘══『 by [𝚂𝙷𝙾𝚃𝙾](https://t.me/yameteee_yamete_kudasai) 』\n"
+                + "╘══『 by [Freak🎭](https://t.me/Frraking_tag) 』\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -523,7 +523,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "Erm... yeah, I only trust the Conductors to set my bio.",
+                "Erm... yeah, I only trust the HellSing Members to set my bio.",
             )
             return      
 
