@@ -8,11 +8,11 @@ from telegram.ext import CallbackContext, CallbackQueryHandler
 
 def bug(update: Update, context: CallbackContext):
     message = update.effective_message
-    IMAGE = "https://telegra.ph/file/0ec3d2fadf05511e819c1.jpg"
+    IMAGE = "https://telegra.ph/file/3ffbb91916cebe50ce985.jpg"
     #args = context.args
     #log_message = ""
-    bugChannelLink = "t.me/+Q3UyHDVMVUdhY2Fl"
-    supportLink = "t.me/unmei_support"
+    bugChannelLink = "t.me/+ZCS8o2m1hYI1Y2Vl"
+    supportLink = "t.me/HellSing_Organisation"
     chat = update.effective_chat
     BUG_DETAILS = message.text.split(' ', 1)
     user = update.effective_user
@@ -25,10 +25,10 @@ def bug(update: Update, context: CallbackContext):
     #req_by = f"<b>Requested By:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
     to_send = to_send.replace("/","#")
     to_send = to_send.replace("!bug","#bug")
-    to_send = to_send.replace("@Destiny_x_Bot","")
+    to_send = to_send.replace("@Alucard_Robot","")
     buttons = [
-        [InlineKeyboardButton("👾 Check Bugs Queue 👾", url=bugChannelLink)],
-        [InlineKeyboardButton("🚀 Escalate it to Support 🚀", url=supportLink)]
+        [InlineKeyboardButton("👾 Bug Reports 👾", url=bugChannelLink)],
+        [InlineKeyboardButton("🩸 HellSing Organisation 🩸", url=supportLink)]
     ]
 
     msg = f"Bug details Submitted successfully.\n"
