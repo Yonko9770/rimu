@@ -12,7 +12,7 @@ from DestinyBot import telethn
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["unmeirobot"]
+db = client["alucard"]
 gbanned = db.gban
 
 def register(**args):
