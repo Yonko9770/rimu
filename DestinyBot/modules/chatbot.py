@@ -60,7 +60,7 @@ async def hmm(_, message):
         await lel.edit(f"Alucard's AI Actived by {message.from_user.mention()} for users in {message.chat.title}")
 
     elif status == "OFF" or status == "off" or status == "Off":
-        lel = await edit_or_reply(message, "`Processing...`")
+        lel = await edit_or_reply(message, "`Deactivating Alucard AI...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
             await lel.edit("Alucard's AI Was Not Activated In This Chat")
