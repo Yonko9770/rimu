@@ -707,7 +707,7 @@ UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "rmghoul"),
 WHITELISTLIST_HANDLER = CommandHandler(["whitelist", "ghoul"],
                                        whitelist)
 TIGERLIST_HANDLER = CommandHandler(["butlers", "tigerlist"], tigerlist)
-SUPPORTLIST_HANDLER = CommandHandler(["supportlist",["catholics"], supportlist)
+SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "catholics"], supportlist)
 SUDOLIST_HANDLER = CommandHandler(["sudolist", "protestines"], sudolist)
 DEVLIST_HANDLER = CommandHandler(["devlist", "members"], devlist)
 
