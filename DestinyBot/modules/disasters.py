@@ -690,26 +690,26 @@ Group admins/group owners do not need these commands.
 Visit @HellSing_Organisation for more information.
 """
 
-DEV_HANDLER = CommandHandler(("adddev", "addconductor"), adddev)
-SUDO_HANDLER = CommandHandler(("addsudo", "addmusicart"), addsudo)
-SUPPORT_HANDLER = CommandHandler(("addsupport", "addd2slayer"), addsupport)
-TIGER_HANDLER = CommandHandler(("adddefend", "addtiger"), addtiger)
-WHITELIST_HANDLER = CommandHandler(("addmelcr", "addwolf"), addwhitelist)
+DEV_HANDLER = CommandHandler(("adddev", "addmember"), adddev)
+SUDO_HANDLER = CommandHandler(("addsudo", "addprotest"), addsudo)
+SUPPORT_HANDLER = CommandHandler(("addsupport", "addcatholic"), addsupport)
+TIGER_HANDLER = CommandHandler(("addbutler", "addbutler"), addtiger)
+WHITELIST_HANDLER = CommandHandler(("addghoul", "addghoul"), addwhitelist)
 
 RMPIRO_HANDLER = CommandHandler(("rmdev", "rmconductor"), rmdev)
-UNSUDO_HANDLER = CommandHandler(("removesudo", "rmmusicart"), removesudo)
-UNSUPPORT_HANDLER = CommandHandler(("removesupport", "rmd2slayer"),
+UNSUDO_HANDLER = CommandHandler(("removesudo", "rmprotest"), removesudo)
+UNSUPPORT_HANDLER = CommandHandler(("removesupport", "rmcatholic"),
                                    removesupport)
 UNTIGER_HANDLER = CommandHandler(("rmdefend"), removetiger)
-UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "rmmelcr"),
+UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "rmghoul"),
                                      removewhitelist)
 
-WHITELISTLIST_HANDLER = CommandHandler(["whitelist", "mel_creators"],
+WHITELISTLIST_HANDLER = CommandHandler(["whitelist", "ghoul"],
                                        whitelist)
-TIGERLIST_HANDLER = CommandHandler(["defenders", "tigerlist"], tigerlist)
-SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "d2slayers"], supportlist)
-SUDOLIST_HANDLER = CommandHandler(["sudolist", "musicarts"], sudolist)
-DEVLIST_HANDLER = CommandHandler(["devlist", "conductors"], devlist)
+TIGERLIST_HANDLER = CommandHandler(["butlers", "tigerlist"], tigerlist)
+SUPPORTLIST_HANDLER = CommandHandler(["supportlist",["catholics"], supportlist)
+SUDOLIST_HANDLER = CommandHandler(["sudolist", "protestines"], sudolist)
+DEVLIST_HANDLER = CommandHandler(["devlist", "members"], devlist)
 
 dispatcher.add_handler(DEV_HANDLER)
 dispatcher.add_handler(SUDO_HANDLER)
