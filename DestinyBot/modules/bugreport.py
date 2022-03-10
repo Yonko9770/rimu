@@ -51,7 +51,7 @@ def bug(update: Update, context: CallbackContext):
         #to_send = f"{to_send}\n Requested By : {mention_html(user.id, html.escape(user.first_name))}\n From Chat: <b>{html.escape(chat.title)}:</b>\n"
         update.effective_message.reply_text("Bruh, this will work like `/bug <report about a bug>`, don't comedy me..")
 __help__ = """
-✮ /bug <report text>*:* Sends a report text mentioned by user directly to
+✟ /bug <report text>*:* Sends a report text mentioned by user directly to
 Unmei Support's private channel.
 
 *NOTE:* it will also collect user's information, specially their Telegram ID.
@@ -62,7 +62,7 @@ BUG_HANDLER = DisableAbleCommandHandler("bug", bug, run_async=True)
 
 dispatcher.add_handler(BUG_HANDLER)
 
-__mod_name__ = "Bug Report"
+__mod_name__ = "✟ Bugs ✟"
 
 __handlers__ = [
     BUG_HANDLER
