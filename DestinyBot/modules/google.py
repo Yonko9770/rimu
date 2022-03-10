@@ -206,18 +206,18 @@ async def apk(e):
         await e.reply("Exception Occured:- " + str(err))
 
 
-__mod_name__ = "Search"
+__mod_name__ = "✟ Search ✟"
 
 __help__ = """
-✮ /google <query>*:* Perform a google search
-✮ /img <query>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
-✮ /app <appname>*:* Searches for an app in Play Store and returns its details.
-✮ /reverse or /grs or /pp: Does a reverse image search of the media which it was replied to.
-✮ /gps <location>*:* Get gps location.
-✮ /github <username>*:* Get information about a GitHub user.
-✮ /country <country name>*:* Gathering info about given country
-✮ /imdb <Movie name>*:* Get full info about a movie with imdb.com
-➤ Unmei <query>*:* Unmei answers the query
+✟ /google <query>*:* Perform a google search
+✟ /img <query>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
+✟ /app <appname>*:* Searches for an app in Play Store and returns its details.
+✟ /reverse or /grs or /pp: Does a reverse image search of the media which it was replied to.
+✟ /gps <location>*:* Get gps location.
+✟ /github <username>*:* Get information about a GitHub user.
+✟ /country <country name>*:* Gathering info about given country
+✟ /imdb <Movie name>*:* Get full info about a movie with imdb.com
+➣ Alucard <query>*:* Unmei answers the query
 
-  💡Ex: `Unmei where is Japan?`
+  💡Ex: `Alucard where is Japan?`
 """
