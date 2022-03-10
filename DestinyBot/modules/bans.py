@@ -91,23 +91,23 @@ def ban(update: Update, context: CallbackContext) -> str:
 
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
         if user_id == OWNER_ID:
-            message.reply_text("Yeah! Like you can ban my Maestro. LMAO. He is kind, don't be hard on him?")
+            message.reply_text("Yeah! Like you can ban my Master Vampire. LMAO. He is the head of the HellSing Organisation, don't mess with him or consequences.")
         elif user_id in DEV_USERS:
-            message.reply_text("That's one of the conductor, I can't ban him/her..")
+            message.reply_text("That's one of the HellSing Members, I can't act against the members...")
         elif user_id in DRAGONS:
             message.reply_text(
-                "Musicarts can't be banned. Make a Note for it."
+                "Protestines can't be banned. Make a Note for it."
             )
         elif user_id in DEMONS:
             message.reply_text(
-                "Hmmm! If I will ban a D2 Slayer, then who will protect the people.."
+                "Hmmm! If I will ban a Catholic, then who will protect the people.."
             )
         elif user_id in TIGERS:
             message.reply_text(
-                "You know that's a defender, you can't ban him/her.."
+                "You know that's a Butler, one of the members from Hellsing Organisation ."
             )
         elif user_id in WOLVES:
-            message.reply_text("Melody Creators are Immune!")
+            message.reply_text("Ghouls are Immune!")
         else:
             message.reply_text("⚠️ Cannot banned admin.")
         return log_message
@@ -206,7 +206,7 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
         message.reply_text("I can't seem to find this user.")
         return log_message
     if user_id == bot.id:
-        message.reply_text("I'm not gonna BAN myself, are you crazy?")
+        message.reply_text("I'm not gonna BAN myself, are you a fker?")
         return log_message
 
     if is_user_ban_protected(chat, user_id, member):
@@ -574,33 +574,33 @@ def snipe(update: Update, context: CallbackContext):
 __help__ = """
 *User Commands:*
 
-✮ /kickme*:* kicks the user who issued the command
+✟ /kickme*:* kicks the user who issued the command
 
 *Admins only:*
 
-✮ /ban <userhandle>*:* bans a user. (via handle, or reply)
-✮ /sban <userhandle>*:* Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)
-✮ /tban <userhandle> x(m/h/d)*:* bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
-✮ /unban <userhandle>*:* unbans a user. (via handle, or reply)
-✮ /kick <userhandle>*:* kicks a user out of the group, (via handle, or reply)
-✮ /mute <userhandle>*:* silences a user. Can also be used as a reply, muting the replied to user.
-✮ /tmute <userhandle> x(m/h/d)*:* mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
-✮ /unmute <userhandle>*:* unmutes a user. Can also be used as a reply, muting the replied to user.
-✮ /zombies*:* searches deleted accounts
-✮ /zombies clean*:* removes deleted accounts from the group.
-✮ /snipe <chatid> <string>*:* Make me send a message to a specific chat.
+✟ /ban <userhandle>*:* bans a user. (via handle, or reply)
+✟ /sban <userhandle>*:* Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)
+✟ /tban <userhandle> x(m/h/d)*:* bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
+✟ /unban <userhandle>*:* unbans a user. (via handle, or reply)
+✟ /kick <userhandle>*:* kicks a user out of the group, (via handle, or reply)
+✟ /mute <userhandle>*:* silences a user. Can also be used as a reply, muting the replied to user.
+✟ /tmute <userhandle> x(m/h/d)*:* mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
+✟ /unmute <userhandle>*:* unmutes a user. Can also be used as a reply, muting the replied to user.
+✟ /zombies*:* searches deleted accounts
+✟ /zombies clean*:* removes deleted accounts from the group.
+✟ /snipe <chatid> <string>*:* Make me send a message to a specific chat.
 
 *Remote commands:*
-✮ `/rban user group`*:* Remote ban
-✮ `/runban user group`*:* Remote un-ban
-✮ `/rpunch user group`*:* Remote punch
-✮ `/rmute user group`*:* Remote mute
-✮ `/runmute user group`*:* Remote un-mute
+✟ `/rban user group`*:* Remote ban
+✟ `/runban user group`*:* Remote un-ban
+✟ `/rpunch user group`*:* Remote punch
+✟ `/rmute user group`*:* Remote mute
+✟ `/runmute user group`*:* Remote un-mute
 
 """
 
 
-__mod_name__ = "Bans/Mutes"
+__mod_name__ = "✟ Bans/Mutes ✟"
 
 BAN_HANDLER = CommandHandler(["ban", "sban"], ban, run_async=True)
 TEMPBAN_HANDLER = CommandHandler(["tban"], temp_ban, run_async=True)
