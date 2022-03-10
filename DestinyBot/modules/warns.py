@@ -63,16 +63,16 @@ def warn(user: User,
 
     if user.id in TIGERS:
         if warner:
-            message.reply_text("Defenders cant be warned.")
+            message.reply_text("Butlers can't be warned.")
         else:
             message.reply_text(
-                "Tiger triggered an auto warn filter!\n I can't warn tigers but they should avoid abusing this."
+                "Butler triggered an auto warn filter!\n I can't warn butlers but they should avoid abusing this."
             )
         return
 
     if user.id in WOLVES:
         if warner:
-            message.reply_text("Melody Creators are warn immune.")
+            message.reply_text("Ghouls are warn immune.")
         else:
             message.reply_text(
                 "Wolf Disaster triggered an auto warn filter!\nI can't warn wolves but they should avoid abusing this."
@@ -429,7 +429,7 @@ def set_warn_strength(update: Update, context: CallbackContext):
     if args:
         if args[0].lower() in ("on", "yes"):
             sql.set_warn_strength(chat.id, False)
-            msg.reply_text("Too many warns will now result in a Ban!")
+            msg.reply_text("Exceeded warn limit now result in a Ban!")
             return (
                 f"<b>{html.escape(chat.title)}:</b>\n"
                 f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
@@ -439,7 +439,7 @@ def set_warn_strength(update: Update, context: CallbackContext):
         elif args[0].lower() in ("off", "no"):
             sql.set_warn_strength(chat.id, True)
             msg.reply_text(
-                "Too many warns will now result in a normal punch! Users will be able to join again after."
+                "Exceeded warn limit now result in a normal punch! Users will be able to join again after."
             )
             return (
                 f"<b>{html.escape(chat.title)}:</b>\n"
@@ -491,18 +491,18 @@ def __chat_settings__(chat_id, user_id):
 
 __help__ = """
 
-✮ /warns <userhandle>: get a user's number, and reason, of warns.
-✮ /warnlist: list of all current warning filters
-✮ /warn <userhandle>: warn a user. After 3 warns, the user will be banned from the group. Can also be used as a reply.
-✮ /dwarn <userhandle>: warn a user and delete the message. After 3 warns, the user will be banned from the group. Can also be used as a reply.
-✮ /resetwarn <userhandle>: reset the warns for a user. Can also be used as a reply.
-✮ /addwarn <keyword> <reply message>: set a warning filter on a certain keyword. If you want your keyword to be a sentence, encompass it with quotes, as such: /addwarn "very angry" This is an angry user.
-✮ /nowarn <keyword>: stop a warning filter
-✮ /warnlimit <num>: set the warning limit
-✮ /strongwarn <on/yes/off/no>: If set to on, exceeding the warn limit will result in a ban. Else, will just punch.
+✟ /warns <userhandle>: get a user's number, and reason, of warns.
+✟ /warnlist: list of all current warning filters
+✟ /warn <userhandle>: warn a user. After 3 warns, the user will be banned from the group. Can also be used as a reply.
+✟ /dwarn <userhandle>: warn a user and delete the message. After 3 warns, the user will be banned from the group. Can also be used as a reply.
+✟ /resetwarn <userhandle>: reset the warns for a user. Can also be used as a reply.
+✟ /addwarn <keyword> <reply message>: set a warning filter on a certain keyword. If you want your keyword to be a sentence, encompass it with quotes, as such: /addwarn "very angry" This is an angry user.
+✟ /nowarn <keyword>: stop a warning filter
+✟ /warnlimit <num>: set the warning limit
+✟ /strongwarn <on/yes/off/no>: If set to on, exceeding the warn limit will result in a ban. Else, will just punch.
 """
 
-__mod_name__ = "Warning"
+__mod_name__ = "✟ Warn ✟"
 
 WARN_HANDLER = CommandHandler(["warn", "dwarn"], warn_user, filters=Filters.chat_type.groups, run_async=True)
 RESET_WARN_HANDLER = CommandHandler(
