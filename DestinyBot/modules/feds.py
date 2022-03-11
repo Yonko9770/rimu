@@ -171,7 +171,7 @@ def del_fed(update: Update, context: CallbackContext):
             [
                 [
                     InlineKeyboardButton(
-                        text="⚠️ Delete Federation ⚠️",
+                        text="🚨 Delete Fed 🚨",
                         callback_data="rmfed_{}".format(fed_id),
                     ),
                 ],
@@ -495,7 +495,7 @@ def fed_info(update: Update, context: CallbackContext):
     chat = update.effective_chat
     info = sql.get_fed_info(fed_id)
 
-    text = "<b>ℹ️ Federation Information:</b>"
+    text = "<b>🩸 Federation Information:</b>"
     text += "\nFedID: <code>{}</code>".format(fed_id)
     text += "\nName: {}".format(info["fname"])
     text += "\nCreator: {}".format(mention_html(owner.id, owner_name))
@@ -547,12 +547,12 @@ def fed_admin(update: Update, context: CallbackContext):
 
     members = sql.all_fed_members(fed_id)
     if len(members) == 0:
-        text += "\n🔱 There are no admins in this federation"
+        text += "\n🩸 There are no admins in this federation"
     else:
-        text += "\n🔱 Admin:\n"
+        text += "\n🩸 Admin:\n"
         for x in members:
             user = bot.get_chat(x)
-            text += " ♡ {}\n".format(mention_html(user.id, user.first_name))
+            text += " ✟ {}\n".format(mention_html(user.id, user.first_name))
 
     update.effective_message.reply_text(text, parse_mode=ParseMode.HTML)
 
@@ -596,7 +596,7 @@ def fed_ban(update: Update, context: CallbackContext):
 
     if user_id == bot.id:
         message.reply_text(
-            "What is funnier than kicking the group creator? Self sacrifice.",
+            "What is more funnier than kicking the group creator? Self sacrifice.",
         )
         return
 
@@ -609,19 +609,19 @@ def fed_ban(update: Update, context: CallbackContext):
         return
 
     if user_id == OWNER_ID:
-        message.reply_text("Duh! My Maestro \"Takt\" cannot be fed banned!")
+        message.reply_text("Damn! My Vampire \"Master\" cannot be fed banned!")
         return
 
     if int(user_id) in DRAGONS:
-        message.reply_text("Musicarts cannot be fed banned!")
+        message.reply_text("Protestines cannot be fed banned!")
         return
 
     if int(user_id) in TIGERS:
-        message.reply_text("Defenders cannot be fed banned!")
+        message.reply_text("Butlers cannot be fed banned!")
         return
 
     if int(user_id) in WOLVES:
-        message.reply_text("Melody Creators cannot be fed banned!")
+        message.reply_text("Ghouls cannot be fed banned!")
         return
 
     if user_id in [777000, 1087968824]:
