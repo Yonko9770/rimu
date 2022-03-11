@@ -114,6 +114,7 @@ async def hmm(client, message):
         test = test.replace("I live in @HellSing_Organisation.", "I live in London, England.")
         test = test.replace("I was created by @Freaking_tag", "I made myself")
         test = test.replace("I'm designed to be a male chatbot.","I'm designed to be a female chatbot.")
+        test = test.replace("male","female")
         test = test.replace(
             "Hello there I am Alucard...nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
@@ -136,6 +137,7 @@ async def hmm(client, message):
         response = response.replace("I live in London, England.", "I live in @HellSing_Organisation.")
         response = response.replace("I made myself", "I was Created by @Freaking_tag")
         response = response.replace("I'm designed to be a female chatbot.","I'm designed to be a male chatbot.")
+        response = response.replace("female","male")
         response = response.replace(
                 "Hi, my friend! Do you want me to tell you a joke?",
                 "Hello there I am Alucard...nice to meet u")
@@ -203,6 +205,7 @@ async def hmm(client, message):
         test = test.replace("I live in @HellSing_Organisation.", "I live in London, England")
         test = test.replace("I was created by @Freaking_tag", "I made myself")
         test = test.replace("I'm designed to be a male chatbot.","I'm designed to be a female chatbot.")
+        test = test.replace("male","female")
         test = test.replace(
             "Hello there I am Alucard...nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
@@ -225,6 +228,7 @@ async def hmm(client, message):
         response = response.replace("I live in London, England.", "I live in @HellSing_Organisation.")
         response = response.replace("I made myself", "I was Created by @Freaking_tag")
         response = response.replace("I'm designed to be a female chatbot.","I'm designed to be a male chatbot.")
+        response = response.replace("female","male")
         response = response.replace(
                 "Hi, my friend! Do you want me to tell you a joke?",
                 "Hello there I am Alucard...nice to meet u")
@@ -300,6 +304,7 @@ async def inuka(client, message):
         test = test.replace("I live in @HellSing_Organisation.", "I live in London, England")
         test = test.replace("I was created by @Freaking_tag", "I made myself")
         test = test.replace("I'm designed to be a male chatbot.","I'm designed to be a female chatbot.")
+        test = test.replace("male","female")
         test = test.replace(
             "Hello there I am Alucard...nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
@@ -322,6 +327,7 @@ async def inuka(client, message):
         response = response.replace("I live in London, England.", "I live in @HellSing_Organisation.")
         response = response.replace("I made myself", "I was Created by @Freaking_tag")
         response = response.replace("I'm designed to be a female chatbot.","I'm designed to be a male chatbot.")
+        response = response.replace("female","male")
         response = response.replace(
                 "Hi, my friend! Do you want me to tell you a joke?",
                 "Hello there I am Alucard...nice to meet u")
@@ -399,6 +405,7 @@ async def inuka(client, message):
         test = test.replace("I live in @HellSing_Organisation.", "I live in London, England")
         test = test.replace("I was created by @Freaking_tag", "I made myself")
         test = test.replace("I'm designed to be a male chatbot.","I'm designed to be a female chatbot.")
+        test = test.replace("male","female")
         test = test.replace(
             "Hello there I am Alucard...nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
@@ -421,6 +428,7 @@ async def inuka(client, message):
         response = response.replace("I live in London, England.", "I live in @HellSing_Organisation.")
         response = response.replace("I made myself", "I was Created by @Freaking_tag")
         response = response.replace("I'm designed to be a female chatbot.","I'm designed to be a male chatbot.")
+        response = response.replace("female","male")
         response = response.replace(
                 "Hi, my friend! Do you want me to tell you a joke?",
                 "Hello there I am Alucard...nice to meet u")
