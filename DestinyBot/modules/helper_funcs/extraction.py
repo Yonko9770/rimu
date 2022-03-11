@@ -48,8 +48,8 @@ def extract_user_and_text(
         user_id = get_user_id(user)
         if not user_id:
             message.reply_text(
-                "No idea who this user is. You'll be able to interact with them if "
-                "you reply to that person's message instead, or forward one of that user's messages.",
+                "No idea who this nigga is. You'll be able to interact with them if "
+                "you reply to that nigga's message instead, or forward one of that nigga's messages.",
             )
             return None, None
         res = message.text.split(None, 2)
@@ -73,7 +73,7 @@ def extract_user_and_text(
     except BadRequest as excp:
         if excp.message in ("User_id_invalid", "Chat not found"):
             message.reply_text(
-                "I don't seem to have interacted with this user before - please forward a message from "
+                "I don't seem to have interacted with this nigga before - please forward a message from "
                 "them to give me control! (like a voodoo doll, I need a piece of them to be able "
                 "to execute certain commands...)",
             )
@@ -120,8 +120,8 @@ def extract_unt_fedban(
         user_id = get_user_id(user)
         if not user_id and not isinstance(user_id, int):
             message.reply_text(
-                "I don't have that user in my db.  "
-                "You'll be able to interact with them if you reply to that person's message instead, or forward one of that user's messages.",
+                "I don't have that nigga in my db.  "
+                "You'll be able to interact with them if you reply to that nigga's message instead, or forward one of that nigga's messages.",
             )
             return None, None
         res = message.text.split(None, 2)
@@ -148,7 +148,7 @@ def extract_unt_fedban(
             int,
         ):
             message.reply_text(
-                "I don't seem to have interacted with this user before "
+                "I don't seem to have interacted with this nigga before "
                 "please forward a message from them to give me control! "
                 "(like a voodoo doll, I need a piece of them to be able to execute certain commands...)",
             )
