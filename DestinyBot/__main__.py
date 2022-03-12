@@ -113,7 +113,7 @@ List of all the Modules:
     dispatcher.bot.first_name, "" if not ALLOW_EXCL else "✟ All commands can either be used with / or !.")
 buttons = [
     [
-        InlineKeyboardButton(text="『 ➕ Add Me 』",url="https://telegram.dog/Destiny_x_Bot?startgroup=true"),
+        InlineKeyboardButton(text="『 ➕ Add Me 』",url="https://telegram.dog/Alucard_Robot?startgroup=true"),
         InlineKeyboardButton(text="『 🔗 Help 』", callback_data="help_back")
     ],
     [
@@ -249,7 +249,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "👋 Hi {}\nI won[']({})t sleep yet, because I believe someone is waiting for my Music.\n\n Uptime - {}".format(update.effective_user.first_name,GROUP_START_IMG,get_readable_time((time.time() - StartTime))),
+            "👋 Hi {}\nI won[']({})t sleep yet, because I believe someone is left for me to eliminate.\n\n Uptime - {}".format(update.effective_user.first_name,GROUP_START_IMG,get_readable_time((time.time() - StartTime))),
             parse_mode=ParseMode.MARKDOWN
        )
 
@@ -334,7 +334,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="『 ⫷ Go Back 』", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="✟ Back to Blackhole ✟", callback_data="help_back")]]
                 ),
             )
 
@@ -428,7 +428,7 @@ def unmei_about_callback(update, context):
     elif query.data == "unmei_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, Alucard (Destiny) is now ready to manage your group."
+            "\nCongragulations, Alucard (HellSing) is now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -760,7 +760,7 @@ def donate(update: Update, context: CallbackContext):
         if OWNER_ID != 866830519:
             update.effective_message.reply_text(
                 "I'm here for the HellSing Organisation 🩸 I will help you also, just join"
-                "[My Channel]({})".format(DONATION_LINK),
+                "[HellSing Family]({})".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
     else:
