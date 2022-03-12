@@ -439,16 +439,16 @@ def set_about_me(update: Update, context: CallbackContext):
 @sudo_plus
 def stats(update, context):
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
-    status = "*╒═══『 Organisation statistics 』*\n\n"
-    status += "*✧ Python Version:* " + python_version() + "\n"
-    status += "*✧ python-Telegram-Bot:* " + str(ptbversion) + "\n"
-    status += "*✧ Uptime:* " + get_readable_time((time.time()-StartTime)) + "\n"
+    status = "*╒═══『 HellSing statistics 』*\n\n"
+    status += "*➠ Python Version:* " + python_version() + "\n"
+    status += "*➠ python-Telegram-Bot:* " + str(ptbversion) + "\n"
+    status += "*➠ Uptime:* " + get_readable_time((time.time()-StartTime)) + "\n"
     try:
         update.effective_message.reply_text(
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[➥ Support](https://t.me/{SUPPORT_CHAT}) | [➲ Updates](https://t.me/HellSing_Updates)\n\n"
+            + f"\n\n[✟ Support](https://t.me/{SUPPORT_CHAT}) | [✟ Updates](https://t.me/HellSing_Updates)\n\n"
             + "╘══ 『 by [Freak🎭](https://t.me/Freaking_tag) 』\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -461,7 +461,7 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n➥ [Support](https://t.me/{SUPPORT_CHAT}) | ➲ [Updates](https://t.me/HellSing_Updates)\n\n"
+                    + f"\n\n✟ [Support](https://t.me/{SUPPORT_CHAT}) | ✟ [Updates](https://t.me/HellSing_Updates)\n\n"
                 )
                 + "╘══『 by [Freak🎭](https://t.me/Frraking_tag) 』\n"
             ),
@@ -607,7 +607,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "Info & AFK"
+__mod_name__ = "✟ Info/AFK ✟"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
