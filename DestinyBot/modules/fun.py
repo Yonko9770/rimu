@@ -24,9 +24,9 @@ BOT_FLIRTED = (
     "If you try something on me, I'll feel weird.🥵",
     "Haah! Better you should use it on someone else. I will only fall for my Maestro.",
     "Wait, are you really flirting with the Robot?",
-    "Aaah, you found no girl, that's why hitting on me.",
+    "Aaah, you found no boy, that's why hitting on me, you gay or something?",
     "Fine, if you say so. But it's not like I like you and all. I'm just being generous to you. Be grateful to me.",
-    "Nope, I only like Maestro. Don't try to seduce me.",
+    "Nope, I only like Master. Don't try anything with me.",
     "Hell no, I won't fall for the likes of you.",
     "Okay! You can flirt with me, but don't think anything would happen between us",
     "B.. Baka, don't flirt with me out of nowhere, I feel little bit shy.",
@@ -376,40 +376,40 @@ def weebify(update: Update, context: CallbackContext):
 
 
 __help__ = """
-✮ /runs*:* reply a random string from an array of replies
-✮ /slap*:* slap a user, or get slapped if not a reply
-✮ /shrug*:* get shrug XD
-✮ /table*:* get flip/unflip :v
-✮ /decide*:* Randomly answers yes/no/maybe
-✮ /toss*:* Tosses A coin
-✮ /bluetext*:* check urself :V
-✮ /roll*:* Roll a dice
-✮ /rlg*:* Join ears,nose,mouth and create an emo ;-;
-✮ /shout <keyword>*:* write anything you want to give loud shout
-✮ /weebify <text>*:* returns a weebified text
-✮ /sanitize*:* always use this before /pat or any contact
-✮ /pat*:* pats a user, or get patted
-✮ /8ball*:* predicts using 8ball method
-✮ /aniflirt*:* Sends cheesy anime pick-up lines.
+✟ /runs*:* reply a random string from an array of replies
+✟ /slap*:* slap a user, or get slapped if not a reply
+✟ /shrug*:* get shrug XD
+✟ /table*:* get flip/unflip :v
+✟ /decide*:* Randomly answers yes/no/maybe
+✟ /toss*:* Tosses A coin
+✟ /bluetext*:* check urself :V
+✟ /roll*:* Roll a dice
+✟ /rlg*:* Join ears,nose,mouth and create an emo ;-;
+✟ /shout <keyword>*:* write anything you want to give loud shout
+✟ /weebify <text>*:* returns a weebified text
+✟ /sanitize*:* always use this before /pat or any contact
+✟ /pat*:* pats a user, or get patted
+✟ /8ball*:* predicts using 8ball method
+✟ /aniflirt*:* Sends cheesy anime pick-up lines.
 
 - Animation
-✮ /love 
-✮ /hack 
-✮ /bombs 
+✟ /love 
+✟ /hack 
+✟ /bombs 
 
 - Shippering
-✮ /couples - get couples of today
+✟ /couples - get couples of today
 
 - Here is the help for the Styletext module:
 
-✮ /weebify <text>: weebify your text!
-✮ /bubble <text>: bubble your text!
-✮ /fbubble <text>: bubble-filled your text!
-✮ /square <text>: square your text!
-✮ /fsquare <text>: square-filled your text!
-✮ /blue <text>: bluify your text!
-✮ /latin <text>: latinify your text!
-✮ /lined <text>: lined your text!
+✟ /weebify <text>: weebify your text!
+✟ /bubble <text>: bubble your text!
+✟ /fbubble <text>: bubble-filled your text!
+✟ /square <text>: square your text!
+✟ /fsquare <text>: square-filled your text!
+✟ /blue <text>: bluify your text!
+✟ /latin <text>: latinify your text!
+✟ /lined <text>: lined your text!
 """
 
 ANIFLIRT_HANDLER = DisableAbleCommandHandler("aniflirt", aniflirt, run_async=True)
@@ -446,7 +446,7 @@ dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
 
-__mod_name__ = "Fun"
+__mod_name__ = "✟ Fun ✟"
 __command_list__ = [
     "runs",
     "slap",
