@@ -44,7 +44,7 @@ def mediainfo(media):
 
 @register(pattern="^/logo ?(.*)")
 async def logo_gen(event):
-    xx = await event.reply("`Preparing your logo...`")
+    xx = await event.reply("`Alucard is preparing your logo...`")
     name = event.pattern_match.group(1)
     if not name:
         await xx.edit("`Provide some text to draw!\nExample: /logo <your name>!`")
@@ -113,7 +113,7 @@ async def logo_gen(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Destiny](https://t.me/Destiny_x_Bot)",
+            caption="Logo by [Alucard](https://t.me/Alucard_Robot)",
             force_document=False,
         )
         os.remove(flnme)
@@ -127,7 +127,7 @@ async def logo_gen(event):
 
 @register(pattern="^/wlogo ?(.*)")
 async def logo_(event):
-    xx = await event.reply("`Preparing your logo...`")
+    xx = await event.reply("`Alucard is preparing your logo...`")
     name = event.pattern_match.group(1)
     if not name:
         await xx.edit("`Provide some text to draw!\nExample: /wlogo <your name>!`")
@@ -196,7 +196,7 @@ async def logo_(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Destiny](https://t.me/Destiny_x_Bot)",
+            caption="Logo by [Alucard](https://t.me/Alucard_Robot)",
             force_document=False,
         )
         os.remove(flnme)
@@ -208,15 +208,15 @@ async def logo_(event):
             os.remove(font_)
 
 
-__mod_name__ = "Logomaker"
+__mod_name__ = "✟ Logos ✟"
 
 __help__ = """ This is help menu for logomaker
 
-✮ /logo <text/name> - Create a logo with random view.
-✮ /wlogo <text/name> - Create a logo with wide view only.
+✟ /logo <text/name> - Create a logo with random view.
+✟ /wlogo <text/name> - Create a logo with wide view only.
 
  Image Editor :
 
-✮  /edit <reply photo> - to edit image.
+✟  /edit <reply photo> - to edit image.
 
 """
