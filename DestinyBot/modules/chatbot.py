@@ -110,7 +110,8 @@ def chatbot(update: Update, context: CallbackContext):
     is_kuki = sql.is_kuki(chat_id)
     if not is_kuki:
         return
-	if message.text and not message.document:
+	
+    if message.text and not message.document:
         if not kuki_message(context, message):
             return
         Message = message.text
