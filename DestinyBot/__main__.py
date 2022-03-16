@@ -113,16 +113,16 @@ List of all the Modules:
     dispatcher.bot.first_name, "" if not ALLOW_EXCL else "✟ All commands can either be used with / or !.")
 buttons = [
     [
-        InlineKeyboardButton(text="『 ➕ Add Me 』",url="https://telegram.dog/Alucard_Robot?startgroup=true"),
-        InlineKeyboardButton(text="『 🔗 Help 』", callback_data="help_back")
+        InlineKeyboardButton(text="Summon me ➕",url="https://telegram.dog/Alucard_Robot?startgroup=true"),
+        InlineKeyboardButton(text="Help ⁉️", callback_data="help_back")
     ],
     [
-        InlineKeyboardButton(text="『 🌐 Hunter Committee 』",url="https://t.me/Hunter_Committee"),
-        InlineKeyboardButton(text="『 ⚓ Hunter Association 』", url="https://t.me/TheHunterAssociation")
+        InlineKeyboardButton(text="Committee 🌐",url="https://t.me/Hunter_Committee"),
+        InlineKeyboardButton(text="Family 🩸", url="https://t.me/TheHunterAssociation")
     ],
     [
-        InlineKeyboardButton(text="『 🩸 Support 』",url="https://telegram.dog/HellSing_Organisation"),
-        InlineKeyboardButton(text="『 🗡️ Logs 』",url="https://t.me/HellSing_Quaters")
+        InlineKeyboardButton(text="Support 🩸",url="https://telegram.dog/HellSing_Organisation"),
+        InlineKeyboardButton(text="Logs 📊",url="https://t.me/HellSing_Quaters")
     ]
 ]
 
