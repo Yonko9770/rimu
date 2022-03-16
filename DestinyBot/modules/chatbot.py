@@ -138,13 +138,13 @@ def list_all_chats(update: Update, context: CallbackContext):
     update.effective_message.reply_text(text, parse_mode="HTML")
 
 __help__ = """
-Chatbot utilizes the Kuki's api which allows Kuki to talk and provide a more interactive group chat experience.
+Chatbot utilizes the Alucard's api which allows Alucard to talk and provide a more interactive group chat experience.
 *Admins only Commands*:
-  ✮ `/chatbot`*:* Shows chatbot control panel
-*Powered by ItelAi*
+  ✟ `/chatbot`*:* Shows chatbot control panel
+*Powered by HellSing Organisation*
 """
 
-__mod_name__ = "ChatBot"
+__mod_name__ = "✟ Chatbot ✟"
 
 CHATBOTK_HANDLER = CommandHandler("chatbot", kuki)
 ADD_CHAT_HANDLER = CallbackQueryHandler(kukiadd, pattern=r"add_chat")
@@ -1326,13 +1326,13 @@ async def inuka(client, message):
 
 __help__ = """
 
-✮ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
+✟ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
 
-✮ /chatbot EN : Enables English only chatbot.
+✟ /chatbot EN : Enables English only chatbot.
 
 """
 
-__mod_name__ = "Chatbot"
+__mod_name__ = "✟ Chatbot ✟"
 
 '''
 
