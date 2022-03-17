@@ -16,24 +16,24 @@ async def carbon_func(_, message):
         return await message.reply_text("`Reply to a text message to make carbon.`")
     if not message.reply_to_message.text:
         return await message.reply_text("`Reply to a text message to make carbon.`")
-    m = await message.reply_text("`Preparing Carbon`")
+    m = await message.reply_text("`Preparing Carbon to pollute the air`")
     carbon = await make_carbon(message.reply_to_message.text)
-    await m.edit("`Uploading`")
+    await m.edit("`Uploading Carbon...`")
     await pbot.send_photo(message.chat.id, carbon)
     await m.delete()
     carbon.close()
 
 
-MEMEK = "https://telegra.ph/file/060ea554c591fc5b0b878.jpg"
+MEMEK = "https://telegra.ph/file/b4e4db5cb7ce118caf3bb.jpg"
 
 #@support_plus
 @pbot.on_message(filters.command("repo"))
 async def repo(_, message):
     await message.reply_photo(
         photo=MEMEK,
-        caption=f"""✨ **Hey I'm Unmei Bot** 
+        caption=f"""🩸 **I'm at service, I'm Alucard** 
 
-**Owner : [Shoto](https://t.me/yameteee_yamete_kudasai)**
+**Owner : [Freak🎭](https://t.me/freaking_tag)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
@@ -45,9 +45,9 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Repo", url="https://github.com/DarkSoulxUltra/DestinyBot"), 
+                        "Repo", url="https://youtu.be/dQw4w9WgXcQ"), 
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/unmei_support")
+                        "Support", url="https://t.me/HellSing_Organisation")
                 ]
             ]
         )
