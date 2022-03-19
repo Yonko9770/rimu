@@ -85,12 +85,12 @@
 			"value": ""
 		},
 		"SUPPORT_CHAT": {
-			"description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to Phantom Troupes then consider you made an enemy.",
+			"description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to HellSing Organisation then consider you made an enemy.",
 			"required": true,
 			"value": "HellSing_Organisation"
 		},
 		"SUPPORT_CHAT_ID": {
-			"description": "Get your support chat ID by going into your support group, adding @Destiny_x_Bot or some other management bot (for fetching id purpose, then you are free to kick it as it's a support group) and /id.",
+			"description": "Get your support chat ID by going into your support group, adding @Alucard_Robot or some other management bot (for fetching id purpose, then you are free to kick it as it's a support group) and /id.",
 			"required": true,
 			"value": "-1001564095516"
 		},
