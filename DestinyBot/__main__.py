@@ -806,7 +806,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "Trump Card of HellSing Organisation,\nI['](https://telegra.ph/file/aeb0c972d16b9741735a5.mp4)m awake again.",
+                "Trump Card of HellSing Organisation,[Alucard](https://telegra.ph/file/aeb0c972d16b9741735a5.mp4) is awake again.",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
