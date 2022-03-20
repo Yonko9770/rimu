@@ -101,7 +101,7 @@ async def inline_help_func(__HELP__):
             input_message_content=InputTextMessageContent(
                 "**__Click A Button To Get Started.__**"
             ),
-            thumb_url="https://telegra.ph/file/b2d2b0111486e0c0bdb1c.jpg",
+            thumb_url="https://telegra.ph/file/a0152a0be0d861f3016d5.jpg",
             reply_markup=buttons,
         ),
     ]
@@ -114,27 +114,27 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     ubot_state = "Dead" if not await ubot2.get_me() else "Alive"
     buttons.add(
-        InlineKeyboardButton("Main bot", url="https://t.me/Destiny_x_Bot"),
+        InlineKeyboardButton("Main bot", url="https://t.me/Alucard_Robot"),
         InlineKeyboardButton(
             "Go Inline!", switch_inline_query_current_chat=""
         ),
     )
 
     msg = f"""
-**[Unmei Robot ❤️](https://t.me/unmei_support):**
+**[Alucard HellSing](https://t.me/Alucard_Robot):**
 **MainBot:** `{bot_state}`
 **UserBot:** `{ubot_state}`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/yametee_yamete_kudasai)
+**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [HELLSING](t.me/HellSing_Organisation)
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
-            description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/b2d2b0111486e0c0bdb1c.jpg",
+            description="Check Alucard's Stats",
+            thumb_url="https://telegra.ph/file/a0152a0be0d861f3016d5.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
@@ -332,11 +332,11 @@ async def lyrics_func(answers, text):
 
 async def tg_search_func(answers, text, user_id):
     if user_id not in DEV_USERS:
-        msg = "**ERROR**\n__THIS FEATURE IS ONLY FOR DEV USERS__"
+        msg = "**ERROR**\n__THIS FEATURE IS ONLY FOR HELLSING MEMBERS__"
         answers.append(
             InlineQueryResultArticle(
                 title="ERROR",
-                description="THIS FEATURE IS ONLY FOR SUDO USERS",
+                description="THIS FEATURE IS ONLY FOR PROTESTINE MEMBERS",
                 input_message_content=InputTextMessageContent(msg),
             )
         )
@@ -537,11 +537,11 @@ async def speedtest_init(query):
     answers = []
     user_id = query.from_user.id
     if user_id not in DEV_USERS:
-        msg = "**ERROR**\n__THIS FEATURE IS ONLY FOR DEV USERS__"
+        msg = "**ERROR**\n__THIS FEATURE IS ONLY FOR HELLSING MEMBERS__"
         answers.append(
             InlineQueryResultArticle(
                 title="ERROR",
-                description="THIS FEATURE IS ONLY FOR SUDO USERS",
+                description="THIS FEATURE IS ONLY FOR PROTESTINE MEMBERS",
                 input_message_content=InputTextMessageContent(msg),
             )
         )
