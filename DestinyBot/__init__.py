@@ -23,11 +23,11 @@ from ptbcontrib.postgres_persistence import PostgresPersistence
 StartTime = time.time()
 
 def get_user_list(__init__, key):
-    with open("{}/DestinyBot/{}".format(os.getcwd(), __init__), "r") as json_file:
+    with open("{}/Alucard/{}".format(os.getcwd(), __init__), "r") as json_file:
         return json.load(json_file)[key]
 
 # enable logging
-FORMAT = "[DestinyBot] %(message)s"
+FORMAT = "[Alucard] %(message)s"
 logging.basicConfig(
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,
@@ -37,10 +37,10 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.INFO)
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
 
-LOGGER = logging.getLogger('[DestinyBot]')
-LOGGER.info("Unmei is starting. | Licensed under GPLv3.")
+LOGGER = logging.getLogger('[Alucard]')
+LOGGER.info("Alucard is starting. | Licensed under GPLv3.")
 LOGGER.info("Not affiliated to other anime or Villain in any way whatsoever.")
-LOGGER.info("Project maintained by: github.com/DarkSoulxUltra (t.me/yameteee_yamete_kudasai)")
+LOGGER.info("Project maintained by: github.com/FreakMask (t.me/Freaking_tag)")
 
 # if version < 3.9, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 9:
