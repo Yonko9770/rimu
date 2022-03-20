@@ -499,7 +499,7 @@ def request(update: Update, context: CallbackContext):
     #req_by = f"<b>Requested By:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
     to_send = to_send.replace("/","#")
     to_send = to_send.replace("!request","#request")
-    to_send = to_send.replace("@Destiny_x_Bot","")
+    to_send = to_send.replace("@Alucard_Robot","")
 
     if len(to_send.split(" ")) >= 2:
         try:
