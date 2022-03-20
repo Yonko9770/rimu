@@ -113,7 +113,7 @@ __mod_name__ = "✟ Tags ✟"
 __help__ = """
 ──「 Mention all func 」──
 
-Destiny Can Be a Mention Bot for your group.
+Alucard Can Be a Mention Bot for your group.
 
 Only admins can tag all.  here is a list of commands
 
