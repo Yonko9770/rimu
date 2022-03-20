@@ -100,7 +100,7 @@ PM_START_TEXT = """
 
 
 HELP_STRINGS = """
-Hello there, I'm Alucard Robot! Some people do call me Alucard.
+Hello there, I'm Alucard! I'm from the anime HellSing.
 To make me functional, make sure that I have enough rights in your group[.](https://telegra.ph/file/ddd1f7bfc7c7213eecfe8.jpg)
 Helpful commands:
 
@@ -118,10 +118,10 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="Committee 🌐",url="https://t.me/Hunter_Committee"),
-        InlineKeyboardButton(text="Family 🩸", url="https://t.me/TheHunterAssociation")
+        InlineKeyboardButton(text="Family 🩸", url="https://t.me/HellSingFamily")
     ],
     [
-        InlineKeyboardButton(text="Support 🩸",url="https://telegram.dog/HellSing_Organisation"),
+        InlineKeyboardButton(text="Support 🩸",url="https://t.me/HellSing_Organisation"),
         InlineKeyboardButton(text="Logs 📊",url="https://t.me/HellSing_Quaters")
     ]
 ]
@@ -197,7 +197,7 @@ def send_help(chat_id, text, keyboard=None):
 def test(update: Update, context: CallbackContext):
     # pprint(eval(str(update)))
     # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
-    update.effective_message.reply_text("Hello tester! I,m Up & running perfectly fine.")
+    update.effective_message.reply_text("Hello Human! I'm Up and continuing my mission perfectly fine.")
     print(update.effective_message)
 
 
@@ -218,7 +218,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="[『 ⫷ Back 』]", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="[Back]", callback_data="help_back")]]
                     ),
                 )
 
@@ -249,7 +249,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "👋 Hi {}\nI won[']({})t sleep yet, because I believe someone is left for me to eliminate.\n\n Uptime - {}".format(update.effective_user.first_name,GROUP_START_IMG,get_readable_time((time.time() - StartTime))),
+            "🩸 Hi {}\nI won[']({})t sleep yet, because I believe someone is left for me to eliminate.\n\n Uptime - {}".format(update.effective_user.first_name,GROUP_START_IMG,get_readable_time((time.time() - StartTime))),
             parse_mode=ParseMode.MARKDOWN
        )
 
