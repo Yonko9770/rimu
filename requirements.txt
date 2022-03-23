@@ -83,9 +83,10 @@ odmantic
 tzlocal
 pendulum
 fuzzysearch
-imghhentaientai2pdf
+img2pdf
 multicolorcaptcha
 git+https://github.com/python-telegram-bot/ptbcontrib.git
+google
 hentai --only-binary all
 natsort
 html-telegraph-poster
