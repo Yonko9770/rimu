@@ -48,7 +48,7 @@ async def post_to_telegraph(page_title, html_format_content):
 
  author=auth_name,
 
- author_url="https://t.me/Destiny_x_Bot",
+ author_url="https://t.me/Alucard_Bot",
 
  text=html_format_content,
 
