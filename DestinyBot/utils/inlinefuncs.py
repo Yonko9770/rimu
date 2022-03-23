@@ -128,7 +128,7 @@ async def alive_function(answers):
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [HELLSING](t.me/HellSing_Organisation)
+**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [HELLSING](t.me/HellSingOrganisation)
 """
     answers.append(
         InlineQueryResultArticle(
