@@ -117,12 +117,12 @@ buttons = [
         InlineKeyboardButton(text="Help ⁉️", callback_data="help_back")
     ],
     [
-        InlineKeyboardButton(text="Committee 🌐",url="https://t.me/Hunter_Committee"),
+        InlineKeyboardButton(text="Committee 🌐",url="https://t.me/HunterCommittee"),
         InlineKeyboardButton(text="Family 🩸", url="https://t.me/HellSingFamily")
     ],
     [
-        InlineKeyboardButton(text="Support 🩸",url="https://t.me/HellSing_Organisation"),
-        InlineKeyboardButton(text="Logs 📊",url="https://t.me/HellSing_Quaters")
+        InlineKeyboardButton(text="Support 🩸",url="https://t.me/HellSingOrganisation"),
+        InlineKeyboardButton(text="Logs 📊",url="https://t.me/HellSingQuaters")
     ]
 ]
 
@@ -133,7 +133,7 @@ DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting [Freak🎭](t.me/Freaking_tag)
  Supporting isn't always financial!
  Those who cannot provide monetary support are welcome to help us develop the bot at our
-[Support Group](t.me/HellSing_Organisation)."""
+[Support Group](t.me/HellSingOrganisation)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
