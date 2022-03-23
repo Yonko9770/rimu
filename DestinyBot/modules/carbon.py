@@ -47,7 +47,7 @@ async def repo(_, message):
                     InlineKeyboardButton(
                         "Repo", url="https://youtu.be/dQw4w9WgXcQ"), 
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/HellSing_Organisation")
+                        "Support", url="https://t.me/HellSingOrganisation")
                 ]
             ]
         )
