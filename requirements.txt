@@ -87,6 +87,9 @@ imghhentaientai2pdf
 multicolorcaptcha
 git+https://github.com/python-telegram-bot/ptbcontrib.git
 hentai --only-binary all
+
 natsort
+
 html-telegraph-poster
+
 NHentai-API
