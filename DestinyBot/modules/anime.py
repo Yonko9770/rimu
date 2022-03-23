@@ -378,7 +378,7 @@ def awake(update: Update, context: CallbackContext):
     IMAGE = "https://telegra.ph/file/630e39b53d676ae91ad4f.jpg"
     msg = ""
     msg += f"{AWAKE_MSG}"
-    support = "t.me/HellSing_Organisation"
+    support = "t.me/HellSingOrganisation"
     owner = "t.me/Freaking_tag"
     buttons = [
 	[
