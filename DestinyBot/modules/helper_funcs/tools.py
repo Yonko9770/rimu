@@ -1,3 +1,5 @@
+from html_telegraph_poster import TelegraphPoster
+
 def media_type(message):
     if message and message.photo:
         return "Photo"
