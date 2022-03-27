@@ -482,14 +482,14 @@ def request(update: Update, context: CallbackContext):
     #log_message = ""
     IMAGE = "https://telegra.ph/file/182dcf60ae56e644b09ed.jpg"
     reqChannelLink = "t.me/+5ADY8ll9pcJhZmRl"
-    tasLink = "t.me/TheHunterAssociation"
+    familyLinK = "t.me/HellSingFamily"
     chat = update.effective_chat
     ANIME_NAME = message.text.split(' ', 1)
     user = update.effective_user
     bot = context.bot
     buttons = [
         [InlineKeyboardButton("⏳ Request Centre ⏳", url=reqChannelLink)],
-        [InlineKeyboardButton("✨ Anime Group ✨", url=tasLink)]
+        [InlineKeyboardButton("✨ Anime Group ✨", url=familyLink)]
     ]
     try:
         chat_id = REQUEST_CHAT_ID
