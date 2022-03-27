@@ -584,7 +584,7 @@ Examples:
 *Overall Information about you:*
  ✟ `/info`*:* get information about a user.
 *What is that health thingy?*
- Come and see [HP System](https://t.me/HellSing_Updates/5)
+ Come and see [HP System](https://t.me/HellSingUpdates/5)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
