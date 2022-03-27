@@ -461,8 +461,8 @@ def unmei_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/HellSing_Organisation"),
-                    InlineKeyboardButton(text="Logs", url="https://t.me/HellSing_Quaters"),
+                    InlineKeyboardButton(text="Support", url="t.me/HellSingOrganisation"),
+                    InlineKeyboardButton(text="Logs", url="https://t.me/HellSingQuaters"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="unmei_"),
@@ -485,7 +485,7 @@ def unmei_about_callback(update, context):
                  ],
                  [
                     InlineKeyboardButton(text="Hunter Association", url="https://t.me/TheHunterAssociation"),
-                    InlineKeyboardButton(text="Committee", url="https://t.me/Hunter_Committee"),
+                    InlineKeyboardButton(text="Committee", url="https://t.me/HunterCommittee"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="unmei_"),
