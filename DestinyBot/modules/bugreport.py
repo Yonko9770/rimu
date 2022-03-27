@@ -12,7 +12,7 @@ def bug(update: Update, context: CallbackContext):
     #args = context.args
     #log_message = ""
     bugChannelLink = "t.me/+ZCS8o2m1hYI1Y2Vl"
-    supportLink = "t.me/HellSing_Organisation"
+    supportLink = "t.me/HellSingOrganisation"
     chat = update.effective_chat
     BUG_DETAILS = message.text.split(' ', 1)
     user = update.effective_user
@@ -49,10 +49,10 @@ def bug(update: Update, context: CallbackContext):
             )
     else:
         #to_send = f"{to_send}\n Requested By : {mention_html(user.id, html.escape(user.first_name))}\n From Chat: <b>{html.escape(chat.title)}:</b>\n"
-        update.effective_message.reply_text("Bruh, this will work like `/bug <report about a bug>`, don't comedy me..")
+        update.effective_message.reply_text("Bruh, this will work like `/bug <report about a bug>`, don't fk with me..")
 __help__ = """
 ✟ /bug <report text>*:* Sends a report text mentioned by user directly to
-Unmei Support's private channel.
+ HellSing Organisation's private channel.
 
 *NOTE:* it will also collect user's information, specially their Telegram ID.
 So, think twice before spamming this command without any reason.
