@@ -113,16 +113,16 @@ List of all the Modules:
     dispatcher.bot.first_name, "" if not ALLOW_EXCL else "✟ All commands can either be used with / or !.")
 buttons = [
     [
-        InlineKeyboardButton(text="Summon me ➕",url="https://telegram.dog/Alucard_Robot?startgroup=true"),
-        InlineKeyboardButton(text="Help ⁉️", callback_data="help_back")
+        InlineKeyboardButton(text="Start Mission➕",url="https://telegram.dog/Alucard_Robot?startgroup=true"),
+        InlineKeyboardButton(text="Help⁉️", callback_data="help_back")
     ],
     [
-        InlineKeyboardButton(text="Committee 🌐",url="https://t.me/HunterCommittee"),
-        InlineKeyboardButton(text="Family 🩸", url="https://t.me/HellSingFamily")
+        InlineKeyboardButton(text="Hunter🐉",url="https://t.me/HunterCommittee"),
+        InlineKeyboardButton(text="Family🀄", url="https://t.me/HellSingFamily")
     ],
     [
-        InlineKeyboardButton(text="Support 🩸",url="https://t.me/HellSingOrganisation"),
-        InlineKeyboardButton(text="Logs 📊",url="https://t.me/HellSingQuaters")
+        InlineKeyboardButton(text="HellSing🩸",url="https://t.me/HellSingOrganisation"),
+        InlineKeyboardButton(text="Quaters🚨",url="https://t.me/HellSingQuaters")
     ]
 ]
 
@@ -133,7 +133,7 @@ DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting [Freak🎭](t.me/Freaking_tag)
  Supporting isn't always financial!
  Those who cannot provide monetary support are welcome to help us develop the bot at our
-[Support Group](t.me/HellSingOrganisation)."""
+[Organisation](t.me/HellSingOrganisation)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -760,7 +760,7 @@ def donate(update: Update, context: CallbackContext):
         if OWNER_ID != 866830519:
             update.effective_message.reply_text(
                 "I'm here for the HellSing Organisation 🩸 I will help you also, just join"
-                "[HellSing Family]({})".format(DONATION_LINK),
+                "[HellSing Organisation]({})".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
     else:
