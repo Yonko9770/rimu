@@ -99,10 +99,10 @@ def error_callback(update: Update, context: CallbackContext):
         url = f"https://www.toptal.com/developers/hastebin/{key}"
         context.bot.send_message(
             ERROR_LOG,
-            text=f"#{context.error.identifier}\n<b>Your feature's make an error for you, check this:"
+            text=f"#{context.error.identifier}\n<b>Your handler or feature's make an error for you, check this:"
             f"</b>\n<code>{e}</code>",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Cursed Errors", url=url)]],
+                [[InlineKeyboardButton("HellSing Error", url=url)]],
             ),
             parse_mode="html",
         )
