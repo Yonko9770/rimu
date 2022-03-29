@@ -314,7 +314,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/HellSing_Updates/4"> ✟ </a>]'.format(
+        text += ' [<a href="https://t.me/HellSingUpdates/4"> ✟ </a>]'.format(
             bot.username,
         )
 
