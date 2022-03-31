@@ -163,7 +163,7 @@ query ($id: Int,$search: String) {
     }
 """
 
-AWAKE_MSG = f"""✟ I am Alucard, A Powerful Group managing Bot.
+AWAKE_MSG = f"""✟ I'm proceeding on my mission as planned.
 
 ✟ Python Version : {py_ver()}
 
@@ -173,7 +173,7 @@ AWAKE_MSG = f"""✟ I am Alucard, A Powerful Group managing Bot.
 
 ✟ Pyrogram Version : {pyro_ver}
 
-✟ Thanks for giving me Blood 🩸 and adding me here!
+✟ Thanks for giving me Mission 🩸 and adding me here!
 
 """
 
@@ -656,13 +656,13 @@ __help__ = """
 ✟ /quote: send quotes randomly as text
 
 ──「 Anime search 」──
-✟ /request <anime>: Triggers a request for anime to our channel.
-Anime will be posted on [The Channel](https://t.me/trending_anime_series) then the request is marked as completed.
+✟ /request <query>: Triggers a request for the Hunter Committee.
+Your triggered request will be available in [HellSing Family](https://t.me/HellSingFamily) then the request is marked as completed. Make sure to join [HellSing Family](https://t.me/HellSingFamily) to access your request.
 
  """
 
 REQUEST_HANDLER = DisableAbleCommandHandler("request", request, run_async=True)
-check_handler = DisableAbleCommandHandler("alive", awake, run_async=True)
+check_handler = DisableAbleCommandHandler("mission", awake, run_async=True)
 ANIME_HANDLER = DisableAbleCommandHandler("anime", anime, run_async=True)
 AIRING_HANDLER = DisableAbleCommandHandler("airing", airing, run_async=True)
 CHARACTER_HANDLER = DisableAbleCommandHandler("character", character, run_async=True)
@@ -688,7 +688,7 @@ dispatcher.add_handler(UPCOMING_HANDLER)
 __mod_name__ = "✟ Anime ✟"
 __command_list__ = [
     "anime", "manga", "character", "user", "upcoming", "kaizoku", "airing",
-    "kayo", "alive", "request"
+    "kayo", "mission", "request"
 ]
 __handlers__ = [
     ANIME_HANDLER, CHARACTER_HANDLER, MANGA_HANDLER, USER_HANDLER,
