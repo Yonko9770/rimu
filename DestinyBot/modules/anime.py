@@ -482,7 +482,7 @@ def request(update: Update, context: CallbackContext):
     #log_message = ""
     IMAGE = "https://telegra.ph/file/182dcf60ae56e644b09ed.jpg"
     reqChannelLink = "t.me/+5ADY8ll9pcJhZmRl"
-    familyLinK = "t.me/HellSingFamily"
+    familyLink = "t.me/HellSingFamily"
     chat = update.effective_chat
     ANIME_NAME = message.text.split(' ', 1)
     user = update.effective_user
