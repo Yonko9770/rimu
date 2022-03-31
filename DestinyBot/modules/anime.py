@@ -163,7 +163,7 @@ query ($id: Int,$search: String) {
     }
 """
 
-AWAKE_MSG = f"""✟ I'm proceeding on my mission as planned.
+AWAKE_MSG = f""" Hello ✟[{event.sender.first_name}](tg://user?id={event.sender.id})✟, I'm Proceeding on my Mission as planned.
 
 ✟ Python Version : {py_ver()}
 
