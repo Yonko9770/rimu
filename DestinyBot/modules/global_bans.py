@@ -233,7 +233,7 @@ def gban(update: Update, context: CallbackContext):
                     send_to_list(
                         bot,
                         DRAGONS + DEMONS,
-                        f"Could not gban due to: {excp.message}",
+                        f"Could not murder due to: {excp.message}",
                     )
                 sql.ungban_user(user_id)
                 return
@@ -260,7 +260,7 @@ def gban(update: Update, context: CallbackContext):
         gban_time = round((gban_time / 60), 2)
         message.reply_text("I've killed that filthy dog!! My Master.", parse_mode=ParseMode.HTML)
     else:
-        message.reply_text("I've killer that filthy dog!! My Master.", parse_mode=ParseMode.HTML)
+        message.reply_text("I've killed that filthy dog!! My Master.", parse_mode=ParseMode.HTML)
 
     try:
         bot.send_message(
@@ -506,7 +506,7 @@ def gbanstat(update: Update, context: CallbackContext):
 
 
 def __stats__():
-    return f"× {sql.num_gbanned_users()} gbanned users."
+    return f"× {sql.num_gbanned_users()} murdered users."
 
 
 def __user_info__(user_id):
@@ -525,7 +525,7 @@ def __user_info__(user_id):
             text += f"\n<b>Reason:</b> <code>{html.escape(user.reason)}</code>"
         text += f"\n<b>Appeal Chat:</b> @{SUPPORT_CHAT}"
     else:
-        text = text.format("???")
+        text = text.format("No")
     return text
 
 
@@ -558,9 +558,9 @@ Note: Users can appeal gbans or report spammers at @{SUPPORT_CHAT}
 
 """
 
-GBAN_HANDLER = CommandHandler("gban", gban, run_async=True)
-UNGBAN_HANDLER = CommandHandler("ungban", ungban, run_async=True)
-GBAN_LIST = CommandHandler("gbanlist", gbanlist, run_async=True)
+GBAN_HANDLER = CommandHandler("murder", gban, run_async=True)
+UNGBAN_HANDLER = CommandHandler("recall", ungban, run_async=True)
+GBAN_LIST = CommandHandler("murderlist", gbanlist, run_async=True)
 GBAN_STATUS = CommandHandler(
     "antispam", gbanstat, filters=Filters.chat_type.groups, run_async=True
 )
