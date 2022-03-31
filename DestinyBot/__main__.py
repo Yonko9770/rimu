@@ -86,7 +86,7 @@ first_name_pm = ""
 PM_START_TEXT = """
 ───『 {} 』───
 *Hey there {}!,*
-* I am an advance group management bot with a lots of Features. My Anime theme is from HellSing. 𝙰𝚕𝚞𝚌𝚊𝚛𝚍 *
+* I am an advance group management bot with a lots of Features. My Anime theme is from HellSing. Alucard *
 
 ══════════════════════
 ✟    *Uptime:* `{}`    ✟
@@ -95,13 +95,13 @@ PM_START_TEXT = """
 ➣ Users Interacted : `{}`
 ➣ Total Chats : `{}`
 
-✟ Try The Help Button below To Know My Abilities[.](https://telegra.ph/file/ddd1f7bfc7c7213eecfe8.jpg) ✟
+✟ Try The Help Button below To Know My Abilities[.](https://telegra.ph/file/c7038dc606fe4ba9f01e1.jpg) ✟
 """
 
 
 HELP_STRINGS = """
 Hello there, I'm Alucard! I'm from the anime HellSing.
-To make me functional, make sure that I have enough rights in your group[.](https://telegra.ph/file/ddd1f7bfc7c7213eecfe8.jpg)
+To make me functional, make sure that I have enough rights in your group[.](https://telegra.ph/file/92e9311faf3522fb74d3e.jpg)
 Helpful commands:
 
 - /start: It will starts me! You've probably used this, as you are here now.
@@ -249,7 +249,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "🩸 Hi {}\nI won[']({})t sleep yet, because I believe someone is left for me to eliminate.\n\n Uptime - {}".format(update.effective_user.first_name,GROUP_START_IMG,get_readable_time((time.time() - StartTime))),
+            "🩸 Hi {}\nI won[']({})t sleep yet, because I believe someone is left for me to eliminate.\n\n Mission Time - {}".format(update.effective_user.first_name,GROUP_START_IMG,get_readable_time((time.time() - StartTime))),
             parse_mode=ParseMode.MARKDOWN
        )
 
