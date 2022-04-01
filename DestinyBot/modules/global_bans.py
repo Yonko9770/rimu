@@ -558,9 +558,9 @@ Note: Users can appeal gbans or report spammers at @{SUPPORT_CHAT}
 
 """
 
-GBAN_HANDLER = CommandHandler("murder", gban, run_async=True)
-UNGBAN_HANDLER = CommandHandler("recall", ungban, run_async=True)
-GBAN_LIST = CommandHandler("murderlist", gbanlist, run_async=True)
+GBAN_HANDLER = CommandHandler(["murder", "gban"], gban, run_async=True)
+UNGBAN_HANDLER = CommandHandler(["recall", "ungban"], ungban, run_async=True)
+GBAN_LIST = CommandHandler(["murderlist", "gbanlist"], gbanlist, run_async=True)
 GBAN_STATUS = CommandHandler(
     "antispam", gbanstat, filters=Filters.chat_type.groups, run_async=True
 )
