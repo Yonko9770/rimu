@@ -125,7 +125,7 @@ def chatbot(update: Update, context: CallbackContext):
 @run_async
 def list_all_chats(update: Update, context: CallbackContext):
     chats = sql.get_all_kuki_chats()
-    text = "<b>Destiny-AI Enabled Chats</b>\n"
+    text = "<b>Alucard-AI Enabled Chats</b>\n"
     for chat in chats:
         try:
             x = context.bot.get_chat(int(*chat))
@@ -141,7 +141,7 @@ __help__ = """
 Chatbot utilizes the Alucard's api which allows Alucard to talk and provide a more interactive group chat experience.
 *Admins only Commands*:
   ✟ `/chatbot`*:* Shows chatbot control panel
-*Powered by HellSing Organisation*
+*Powered by* [HellSing Organisation](https://t.me/HellSingOrganisation)
 """
 
 __mod_name__ = "✟ Chatbot ✟"
