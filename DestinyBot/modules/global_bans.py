@@ -177,7 +177,7 @@ def gban(update: Update, context: CallbackContext):
     log_message = (
         f"#GBANNED\n"
         f"<b>Originated from:</b> <code>{chat_origin}</code>\n"
-        f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
+        f"<b>HellSing Member:</b> {mention_html(user.id, user.first_name)}\n"
         f"<b>Murdered User:</b> {mention_html(user_chat.id, user_chat.first_name)}\n"
         f"<b>Murdered User ID:</b> <code>{user_chat.id}</code>\n"
         f"<b>Event Stamp:</b> <code>{current_time}</code>"
@@ -314,7 +314,7 @@ def ungban(update: Update, context: CallbackContext):
     log_message = (
         f"#UNGBANNED\n"
         f"<b>Originated from:</b> <code>{chat_origin}</code>\n"
-        f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
+        f"<b>HellSing Member:</b> {mention_html(user.id, user.first_name)}\n"
         f"<b>Reincarnated User:</b> {mention_html(user_chat.id, user_chat.first_name)}\n"
         f"<b>Reincarnated User ID:</b> <code>{user_chat.id}</code>\n"
         f"<b>Event Stamp:</b> <code>{current_time}</code>"
