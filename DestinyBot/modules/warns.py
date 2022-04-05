@@ -63,19 +63,19 @@ def warn(user: User,
 
     if user.id in TIGERS:
         if warner:
-            message.reply_text("Butlers can't be warned.")
+            message.reply_text("Catholics can't be warned.")
         else:
             message.reply_text(
-                "Butler triggered an auto warn filter!\n I can't warn butlers but they should avoid abusing this."
+                "Catholic triggered an auto warn filter!\n I can't warn Catholics but they should avoid abusing this."
             )
         return
 
     if user.id in WOLVES:
         if warner:
-            message.reply_text("Ghouls are warn immune.")
+            message.reply_text("Butlers are warn immune.")
         else:
             message.reply_text(
-                "Wolf Disaster triggered an auto warn filter!\nI can't warn wolves but they should avoid abusing this."
+                "Butler triggered an auto warn filter!\nI can't warn Butlers but they should avoid abusing this."
             )
         return
 
