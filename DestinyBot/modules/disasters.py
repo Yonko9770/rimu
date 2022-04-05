@@ -645,14 +645,14 @@ access are mainly used for troubleshooting, debugging purposes.
 Group admins/group owners do not need these commands. 
  ╔ *List all special users:*
  ╠ ✟ `/protestines` or `/sudolist`*:* Lists all Dragon disasters
- ╠ ✟ `/catholics` or `/supportlist`*:* Lists all Demon disasters
- ╠ ✟ `/butlers` or `/tigerlist`*:* Lists all Tigers disasters
- ╠ ✟ `/ghouls` or `/whitelist`*:* Lists all Wolf disasters
- ╠ ✟ `/hell_mems` or `/devlist`*:* Lists all Dev disastors
- ╠ ✟ `/addprotest` or `/addsudo`*:* Adds a user to Dragon
- ╠ ✟ `/addcatholic` or `/addsupport`*:* Adds a user to Demon
- ╠ ✟ `/addbutler` or `/addtiger`*:* Adds a user to Tiger
- ╚ ✟ `/addghoul` or `/addwolf`*:* Adds a user to Wolf 
+ ╠ ✟ `/iscariots` or `/supportlist`*:* Lists all Demon disasters
+ ╠ ✟ `/catholics` or `/tigerlist`*:* Lists all Tigers disasters
+ ╠ ✟ `/butlers` or `/whitelist`*:* Lists all Wolf disasters
+ ╠ ✟ `/knights` or `/devlist`*:* Lists all Dev disastors
+ ╠ ✟ `/addprotestine` or `/addsudo`*:* Adds a user to Dragon
+ ╠ ✟ `/addiscariot` or `/addsupport`*:* Adds a user to Demon
+ ╠ ✟ `/addcatholic` or `/addtiger`*:* Adds a user to Tiger
+ ╚ ✟ `/addbutler` or `/addwolf`*:* Adds a user to Wolf 
  ╔ *Ping:*
  ╠ ✟ `/ping`*:* gets ping time of bot to telegram server
  ╚ ✟ `/pingall`*:* gets all listed ping times
