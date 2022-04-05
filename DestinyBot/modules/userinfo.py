@@ -249,18 +249,18 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>Accessing info from HellSing Organisation...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══「<b> Accessed Results:</b> 」\n"
-        f"ID: <code>{user.id}</code>\n"
-        f"First Name: {html.escape(user.first_name)}"
+        f"╒═══「<b><i>Accessed Results:</i></b> 」\n"
+        f"✟ ID: <code>{user.id}</code>\n"
+        f"✟ First Name: {html.escape(user.first_name)}"
     )
 
     if user.last_name:
-        text += f"\nLast Name: {html.escape(user.last_name)}"
+        text += f"\n✟ Last Name: {html.escape(user.last_name)}"
 
     if user.username:
-        text += f"\nUsername: @{html.escape(user.username)}"
+        text += f"\n✟ Username: @{html.escape(user.username)}"
 
-    text += f"\nUserlink: {mention_html(user.id, 'link')}"
+    text += f"\n✟ Userlink: {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
         _stext = "\nPresence: <code>{}</code>"
@@ -295,22 +295,22 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\n This person is my Vampire - <b>'Alucard'</b>."
+        text += "\n\n This Hellsing Member is my Master - <b>'Master'</b>."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is a 'HellSing Member', a Organisation member."
+        text += "\n\nThis HellSing Member is a 'Knight', a Organisation member."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThis user is a 'Protestine', from the Organisation."
+        text += "\n\nThis HellSing Member is a 'Protestine', from the Organisation."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThis user is a 'Catholic', from the Organisation."
+        text += "\n\nThis HellSing Member is a 'Iscariot', from the Organisation."
         disaster_level_present = True 
     elif user.id in TIGERS:
-        text += "\n\nThis user is a 'Butler', from the Organisation."
+        text += "\n\nThis HellSing Member is a 'Catholic', from the Organisation."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThis user is a 'Ghoul', from the Organisation."
+        text += "\n\nThis HellSing Memeber is a 'Butler', from the Organisation."
         disaster_level_present = True
 
     if disaster_level_present:
@@ -439,7 +439,7 @@ def set_about_me(update: Update, context: CallbackContext):
 @sudo_plus
 def stats(update, context):
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
-    status = "*╒═══『 HellSing statistics 』*\n\n"
+    status = "*╒═══『 HellSing Statistics 』*\n\n"
     status += "*➠ Python Version:* " + python_version() + "\n"
     status += "*➠ python-Telegram-Bot:* " + str(ptbversion) + "\n"
     status += "*➠ Uptime:* " + get_readable_time((time.time()-StartTime)) + "\n"
@@ -461,9 +461,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✟ [Support](https://t.me/{SUPPORT_CHAT}) | ✟ [Updates](https://t.me/HellSingUpdates)\n\n"
+                    + f"\n\n✟ [Support](https://t.me/HellSingOrganisation) | ✟ [Updates](https://t.me/HellSingUpdates)\n\n"
                 )
-                + "╘══『 by [Freak🎭](https://t.me/Frraking_tag) 』\n"
+                + "╘══『 by [HellSing ✟ Organisation](https://t.me/{SUPPORT_GROUP}) 』\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
