@@ -103,7 +103,7 @@ def adddev(update: Update, context: CallbackContext) -> str:
     log_message = (
         f"#KNIGHT\n"
         f"<b>HellSing Member:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
-        f"<b>User:</b> {mention_html(user_member.id, html.escape(user.first_name))}"
+        f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
     )
 
     if chat.type != 'private':
