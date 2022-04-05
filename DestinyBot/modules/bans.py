@@ -91,23 +91,23 @@ def ban(update: Update, context: CallbackContext) -> str:
 
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
         if user_id == OWNER_ID:
-            message.reply_text("Yeah! Like you can ban my Master Vampire. LMAO. He is the head of the HellSing Organisation, don't mess with him or consequences.")
+            message.reply_text("Yeah! Like you can ban my Master. LMAO. He is the head of the HellSing Organisation, don't mess with him or consequences.")
         elif user_id in DEV_USERS:
-            message.reply_text("That's one of the HellSing Members, I can't act against the members...")
+            message.reply_text("That's one of the Knights from the Organisation, I can't act against the members...")
         elif user_id in DRAGONS:
             message.reply_text(
                 "Protestines can't be banned. Make a Note for it."
             )
         elif user_id in DEMONS:
             message.reply_text(
-                "Hmmm! If I will ban a Catholic, then who will protect the people.."
+                "Hmmm! If I ban a Iscariot, then who will protect the people.."
             )
         elif user_id in TIGERS:
             message.reply_text(
-                "You know that's a Butler, one of the members from Hellsing Organisation ."
+                "You know that's a Catholic, one of the Member from Hellsing Organisation ."
             )
         elif user_id in WOLVES:
-            message.reply_text("Ghouls are Immune!")
+            message.reply_text("Butlers are Immune!")
         else:
             message.reply_text("⚠️ Cannot banned admin.")
         return log_message
