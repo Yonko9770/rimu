@@ -662,7 +662,7 @@ Your triggered request will be available in [HellSing Family](https://t.me/HellS
  """
 
 REQUEST_HANDLER = DisableAbleCommandHandler("request", request, run_async=True)
-check_handler = DisableAbleCommandHandler("mission", awake, run_async=True)
+check_handler = DisableAbleCommandHandler(["mission", "alive"], awake, run_async=True)
 ANIME_HANDLER = DisableAbleCommandHandler("anime", anime, run_async=True)
 AIRING_HANDLER = DisableAbleCommandHandler("airing", airing, run_async=True)
 CHARACTER_HANDLER = DisableAbleCommandHandler("character", character, run_async=True)
