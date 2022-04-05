@@ -198,19 +198,19 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    f"Welcome my Lord Freak {html.escape(chat.title)}. My Beloved, Master!!!.", reply_to_message_id=reply
+                    f"Welcome My Master Freak {html.escape(chat.title)}. My Beloved, Master!!!.", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
                     f"#USER_JOINED\n"
-                    f"Vampire just joined the chat"
+                    f"Master just joined the chat"
                 )
                 continue
 
             # Welcome Devs
             if new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "A HellSing Member has joined the group! Be careful!",
+                    "A Knight from the HellSing Organisation has joined the group! Be careful!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -218,7 +218,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Sudos
             if new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
-                    "Attention! a Protestine just joined the group! Stay alert!",
+                    "Attention! a Protestine just joined the group!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -226,7 +226,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Support
             if new_mem.id in DEMONS:
                 update.effective_message.reply_text(
-                    "A Catholic just joined! members, be aware!",
+                    "A Iscariot just joined! members, beware!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -234,7 +234,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome WOLVES
             if new_mem.id in WOLVES:
                 update.effective_message.reply_text(
-                    "A Ghoul joined! Everyone stay alerted or become their food!", reply_to_message_id=reply
+                    "A Butler joined! Everyone stay alerted!", reply_to_message_id=reply
                 )
                 continue
 
@@ -610,14 +610,14 @@ def left_member(update: Update, context: CallbackContext):  # sourcery no-metric
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Master Vampire!! Please don't leave me.. ;(", reply_to_message_id=reply
+                    "Master [Freak](https://t.me/Freaking_tag)!! Please don't leave me.. ;(", reply_to_message_id=reply
                 )
                 return
 
             # Give the devs a special goodbye
             if left_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "See you on the other side! HellSing Member*",
+                    "See you on the other side of the walls! Knight*",
                     reply_to_message_id=reply,
                 )
                 return
