@@ -99,9 +99,9 @@ Region:- {reg}
 Sub Region:- {sub}
 Time Zones:- {tom}
 Top Level Domain:- {lanester}
-wikipedia:- {wiki}</b><i>
+wikipedia:- {wiki}</b>
 
-Gathered By Alucard.</i></b>
+<b><i>Gathered By {}.</i></b>
 """
 
     await borg.send_message(
