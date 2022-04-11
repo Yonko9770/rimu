@@ -1,4 +1,4 @@
-__mode_name__ = "✟ Nhentai"
+__mode_name__ = "✟ Nhentai ✟"
 
 __help__ = """
 
