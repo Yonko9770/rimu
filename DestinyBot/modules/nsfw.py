@@ -874,9 +874,10 @@ __handlers__ = [
 
 __help__ = """
 
-
-
-
+*Note:*
+✟ If you want a Hentai group then just join [Hentai Hostel](https://t.me/HunterCommittee/161)
+• Make sure to read rules before getting horny in the group. Strict Moderation!!
+• Only Animated stuffs are allowed!!
 
 *NSFW:*
  ✟ /addnsfw : Enable NSFW mode
