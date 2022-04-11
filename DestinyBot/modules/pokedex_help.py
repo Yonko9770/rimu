@@ -1,4 +1,4 @@
-__mod_name__ = "✟ Pokedex ✟"
+__mod_name__ ="✟ Pokedex ✟"
 
 _help_ = """
 
