@@ -2,6 +2,7 @@ __mod_name__ ="✟ Pokedex ✟"
 
 __help__ ="""
 
+
 *Pokedex*
 
 ✟ /pokedex <name of pokemon> It gathers information about the Pokemon, if the name is given correctly.
