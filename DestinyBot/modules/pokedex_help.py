@@ -1,6 +1,6 @@
 __mod_name__ ="✟ Pokedex ✟"
 
-_help_ = """
+__help__ ="""
 
 *Pokedex*
 
