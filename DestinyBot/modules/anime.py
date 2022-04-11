@@ -489,7 +489,7 @@ def request(update: Update, context: CallbackContext):
     bot = context.bot
     buttons = [
         [InlineKeyboardButton("⏳ Request Centre ⏳", url=reqChannelLink)],
-        [InlineKeyboardButton("✨ Anime Group ✨", url=familyLink)]
+        [InlineKeyboardButton("✨ HellSing Family ✨", url=familyLink)]
     ]
     try:
         chat_id = REQUEST_CHAT_ID
