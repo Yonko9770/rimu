@@ -68,7 +68,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "Hey, {first}, ever heard the Titan Engine?",  # One Punch ma
     "Hey, {first}, empty your pockets.",
     "Hey, {first}!, are you strong?",
-    "Call the Avengers! - {first} just joined the chat.",
+    "Call the Hunters! - {first} just joined the chat.",
     "{first} joined. You must construct additional pylons.",
     "Ermagherd. {first} is here.",
     "Come for the Snail Racing, Stay for the Chimichangas!",
@@ -106,7 +106,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "{first} just joined. Hey, where's Perry?",
     "Okairinasai {first} Nii-Chan, are you a female? Then Onee-Chan*",
     "{first}, you might wanna ask about my Maestro, afterall, he is the best spirit conductor.",
-    "Takt, is that a D2, ohh it is just {first}.",
+    "I think he's from the Millinium, ohh it is just {first}.",
     "{first}, Welcome to this mess, Gambatte!!!",
     "{first} just joined. Oh, there you are, Perry.",
     "Ladies and gentlemen, I give you ...  {first}.",
