@@ -246,7 +246,7 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Accessing info from HellSing Organisation...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>Accessing data from HellSing Organisation...</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"╒═══<b>「Database of {html.escape(user.first_name)}:」</b>\n"
