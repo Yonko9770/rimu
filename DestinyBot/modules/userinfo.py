@@ -249,7 +249,7 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>Accessing info from HellSing Organisation...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══<b>「Database of {mention_html(user.id,first_name)}:」</b>\n"
+        f"╒═══<b>「Database of {html.escape(user.first_name)}:」</b>\n"
         f"✟ ID: <code>{user.id}</code>\n"
         f"✟ First Name: {html.escape(user.first_name)}"
     )
