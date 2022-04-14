@@ -249,7 +249,7 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>Accessing info from HellSing Organisation...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══「<b><i>Accessed Results:</i></b> 」\n"
+        f"╒═══<b>「Info of {html.escape(user.first_name)}:」</b>\n"
         f"✟ ID: <code>{user.id}</code>\n"
         f"✟ First Name: {html.escape(user.first_name)}"
     )
@@ -260,10 +260,10 @@ def info(update: Update, context: CallbackContext):
     if user.username:
         text += f"\n✟ Username: @{html.escape(user.username)}"
 
-    text += f"\n✟ Userlink: {mention_html(user.id, 'link')}"
+    text += f"\n✟ Userlink: {mention_html(user.id, {html.escape(user.first_name)}) }"
 
     if chat.type != "private" and user_id != bot.id:
-        _stext = "\nPresence: <code>{}</code>"
+        _stext = "\n✟ Presence: <code>{}</code>"
 
         afk_st = is_afk(user.id)
         if afk_st:
@@ -285,8 +285,8 @@ def info(update: Update, context: CallbackContext):
         spamwtc = sw.get_ban(int(user.id))
         if spamwtc:
             text += "\n\n<b>This person is Spamwatched!</b>"
-            text += f"\nReason: <pre>{spamwtc.reason}</pre>"
-            text += "\nAppeal at @SpamWatchSupport"
+            text += f"\n✟ Reason: <pre>{spamwtc.reason}</pre>"
+            text += "\n✟ Appeal at @SpamWatchSupport"
         else:
             pass
     except:
@@ -449,7 +449,7 @@ def stats(update, context):
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
             + f"\n\n[✟ Support](https://t.me/{SUPPORT_CHAT}) | [✟ Updates](https://t.me/HellSingUpdates)\n\n"
-            + "╘══ 『 by [Freak🎭](https://t.me/Freaking_tag) 』\n",
+            + "╘══ 『 by [HellSing ✟ Organisation](https://t.me/HellSingOrganisation) 』\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
