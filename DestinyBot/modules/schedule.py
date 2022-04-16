@@ -122,7 +122,7 @@ def callbackk(_,query):
 
         
 
-__mod_name__ = "✟ Scheduled"
+__mod_name__ = "✟ Scheduled ✟"
 
 __help__ = """
 
