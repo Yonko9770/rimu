@@ -89,7 +89,7 @@ PM_START_TEXT = """
 * I am an advance group management bot with a lots of Features. My Anime theme is from HellSing. Alucard *
 
 ══════════════════════
-✟    *Uptime:* `{}`    ✟
+✟    *Mission Time:* `{}`    ✟
 ══════════════════════
 
 ➣ Users Interacted : `{}`
@@ -117,12 +117,12 @@ buttons = [
         InlineKeyboardButton(text="Help⁉️", callback_data="help_back")
     ],
     [
-        InlineKeyboardButton(text="Hunter🐉",url="https://t.me/HunterCommittee"),
-        InlineKeyboardButton(text="Family🀄", url="https://t.me/HellSingFamily")
+        InlineKeyboardButton(text="Wizards🔥",url="https://t.me/TeamWizardz"),
+        InlineKeyboardButton(text="Hunters🐉", url="https://t.me/HunterCommittee")
     ],
     [
         InlineKeyboardButton(text="HellSing🩸",url="https://t.me/HellSingOrganisation"),
-        InlineKeyboardButton(text="Quaters🚨",url="https://t.me/HellSingQuaters")
+        InlineKeyboardButton(text="Family🀄",url="https://t.me/HellSingFamily")
     ]
 ]
 
