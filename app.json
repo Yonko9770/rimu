@@ -77,7 +77,7 @@
 
 		"OWNER_USERNAME": {
 			"description": "Your username without the @",
-			"value": "Freaking_tag"
+			"value": "FreakBeing"
 		},
 		"REQUEST_CHAT_ID": {
 			"description": "If you have any anime channel, and you want your users to request anime, enter it's ID so it will shoot a request directly there. Note: Made bot as admin there",
@@ -87,7 +87,7 @@
 		"SUPPORT_CHAT": {
 			"description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to HellSing Organisation then consider you made an enemy.",
 			"required": true,
-			"value": "HellSing_Organisation"
+			"value": "HellSingOrganisation"
 		},
 		"SUPPORT_CHAT_ID": {
 			"description": "Get your support chat ID by going into your support group, adding @Alucard_Robot or some other management bot (for fetching id purpose, then you are free to kick it as it's a support group) and /id.",
