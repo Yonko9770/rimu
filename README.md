@@ -28,6 +28,6 @@ Can be found on telegram as [Alucard](https://t.me/Alucard_Robot).
 ## Credits -
 • [Base Repo](https://github.com/kennedy-ex/EmikoRobot)
 
-• [Sena](https://github.com/kennedy-ex)
+• [Freak](https://github.com/FreakMask/Alucard)
 
 • [Shoto](https://github.com/DarkSoulxUltra)
