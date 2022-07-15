@@ -117,23 +117,20 @@ buttons = [
         InlineKeyboardButton(text="Help⁉️", callback_data="help_back")
     ],
     [
-        InlineKeyboardButton(text="Wizards🔥",url="https://t.me/TeamWizardz"),
-        InlineKeyboardButton(text="Hunters🐉", url="https://t.me/HunterCommittee")
+        InlineKeyboardButton(text="Support🚨", url="https://t.me/Hellsingorganisation"),
+        InlineKeyboardButton(text="Logs📊", url="https://t.me/HellSingQuaters")
     ],
     [
-        InlineKeyboardButton(text="HellSing🩸",url="https://t.me/HellSingOrganisation"),
-        InlineKeyboardButton(text="Family🀄",url="https://t.me/HellSingFamily")
+        InlineKeyboardButton(text="VARMINT",url="https://t.me/VARMINTs"),
+        InlineKeyboardButton(text="HYBRID",url="https://t.me/HYBRIDCLAN")
     ]
 ]
 
 GROUP_START_IMG = "https://telegra.ph/file/8b06d2fb52b5895384c57.mp4"
 DESTINY_IMG = "https://telegra.ph/file/8b06d2fb52b5895384c57.mp4"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting [Freak🎭](t.me/Freaking_tag)
- Supporting isn't always financial!
- Those who cannot provide monetary support are welcome to help us develop the bot at our
-[Organisation](t.me/HellSingOrganisation)."""
+DONATE_STRING = """Glad to know that you wanna donate
+For supporting our work just join [VARMINT](https://t.me/varmints) Thank you!!"""
 
 IMPORTED = {}
 MIGRATEABLE = []
